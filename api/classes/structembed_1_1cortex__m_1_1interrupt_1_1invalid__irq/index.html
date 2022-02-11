@@ -5,10 +5,8 @@
 <meta name=generator content="Hugo 0.92.1">
 <meta name=generator content="Relearn 2.9.2
 ">
-<link rel=alternate type=application/rss+xml href=/libarmcortex/index.xml title="libarmcortex docs">
-<link rel=alternate type=application/json href=/libarmcortex/index.json title="libarmcortex docs">
 <meta name=description content>
-<title>Welcome :: libarmcortex docs</title>
+<title>embed::cortex_m::interrupt::invalid_irq :: libarmcortex docs</title>
 <link href=/libarmcortex/css/nucleus.css?1644553388 rel=stylesheet>
 <link href=/libarmcortex/css/fontawesome-all.min.css?1644553388 rel=stylesheet>
 <link href=/libarmcortex/css/featherlight.min.css?1644553388 rel=stylesheet>
@@ -21,7 +19,7 @@
 <script src=/libarmcortex/js/jquery.min.js?1644553388></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/libarmcortex/>
+<body data-url=/libarmcortex/api/classes/structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq/>
 <script>var index_url="/libarmcortex/index.json",root_url="/",baseUri=root_url.replace(/\/$/,'')</script>
 <nav id=sidebar>
 <div id=header-wrapper>
@@ -53,13 +51,13 @@
 <li data-nav-id=/libarmcortex/guides/data_section_init/ title="How to Initialize the Data Section" class=dd-item><a href=/libarmcortex/guides/data_section_init/>How to Initialize the Data Section</a></li>
 <li data-nav-id=/libarmcortex/guides/system_timer_usage/ title="System Timer Usage" class=dd-item><a href=/libarmcortex/guides/system_timer_usage/>System Timer Usage</a></li>
 <li data-nav-id=/libarmcortex/guides/dwt_usage/ title="D.ebug W.atchdog T.race (DWT) counter usage" class=dd-item><a href=/libarmcortex/guides/dwt_usage/>D.ebug W.atchdog T.race (DWT) counter usage</a></li></ul></li>
-<li data-nav-id=/libarmcortex/api/ title=API class=dd-item><a href=/libarmcortex/api/><b>3. </b>API</a><ul>
-<li data-nav-id=/libarmcortex/api/classes/ title=Classes class="dd-item alwaysopen"><a href=/libarmcortex/api/classes/>Classes</a><ul>
+<li data-nav-id=/libarmcortex/api/ title=API class="dd-item parent"><a href=/libarmcortex/api/><b>3. </b>API</a><ul>
+<li data-nav-id=/libarmcortex/api/classes/ title=Classes class="dd-item parent alwaysopen"><a href=/libarmcortex/api/classes/>Classes</a><ul>
 <li data-nav-id=/libarmcortex/api/classes/classembed_1_1cortex__m_1_1dwt__counter/ title=embed::cortex_m::dwt_counter class=dd-item><a href=/libarmcortex/api/classes/classembed_1_1cortex__m_1_1dwt__counter/>embed::cortex_m::dwt_counter</a></li>
 <li data-nav-id=/libarmcortex/api/classes/structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t/ title=embed::cortex_m::dwt_counter::core_debug_registers_t class=dd-item><a href=/libarmcortex/api/classes/structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t/>embed::cortex_m::dwt_counter::core_debug_registers_t</a></li>
 <li data-nav-id=/libarmcortex/api/classes/structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t/ title=embed::cortex_m::dwt_counter::dwt_registers_t class=dd-item><a href=/libarmcortex/api/classes/structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t/>embed::cortex_m::dwt_counter::dwt_registers_t</a></li>
 <li data-nav-id=/libarmcortex/api/classes/classembed_1_1cortex__m_1_1interrupt/ title=embed::cortex_m::interrupt class=dd-item><a href=/libarmcortex/api/classes/classembed_1_1cortex__m_1_1interrupt/>embed::cortex_m::interrupt</a></li>
-<li data-nav-id=/libarmcortex/api/classes/structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq/ title=embed::cortex_m::interrupt::invalid_irq class=dd-item><a href=/libarmcortex/api/classes/structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq/>embed::cortex_m::interrupt::invalid_irq</a></li>
+<li data-nav-id=/libarmcortex/api/classes/structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq/ title=embed::cortex_m::interrupt::invalid_irq class="dd-item active"><a href=/libarmcortex/api/classes/structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq/>embed::cortex_m::interrupt::invalid_irq</a></li>
 <li data-nav-id=/libarmcortex/api/classes/classembed_1_1cortex__m_1_1interrupt_1_1irq__t/ title=embed::cortex_m::interrupt::irq_t class=dd-item><a href=/libarmcortex/api/classes/classembed_1_1cortex__m_1_1interrupt_1_1irq__t/>embed::cortex_m::interrupt::irq_t</a></li>
 <li data-nav-id=/libarmcortex/api/classes/structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t/ title=embed::cortex_m::interrupt::nvic_register_t class=dd-item><a href=/libarmcortex/api/classes/structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t/>embed::cortex_m::interrupt::nvic_register_t</a></li>
 <li data-nav-id=/libarmcortex/api/classes/structembed_1_1cortex__m_1_1interrupt_1_1vector__table__not__initialized/ title=embed::cortex_m::interrupt::vector_table_not_initialized class=dd-item><a href=/libarmcortex/api/classes/structembed_1_1cortex__m_1_1interrupt_1_1vector__table__not__initialized/>embed::cortex_m::interrupt::vector_table_not_initialized</a></li>
@@ -95,20 +93,124 @@
 <div id=body>
 <div id=overlay></div>
 <div class="padding highlightable">
+<div id=top-bar>
+<div id=breadcrumbs>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<ol class=links itemscope itemtype=http://schema.org/BreadcrumbList>
+<meta itemprop=itemListOrder content="Descending">
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="4"><a itemprop=item href=/libarmcortex/><span itemprop=name>Welcome</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="3"><a itemprop=item href=/libarmcortex/api/><span itemprop=name>API</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/libarmcortex/api/classes/><span itemprop=name>Classes</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/libarmcortex/api/classes/structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq/ aria-disabled=true><span itemprop=name>embed::cortex_m::interrupt::invalid_irq</span></a></li>
+</ol>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#public-functions>Public Functions</a></li>
+<li><a href=#public-attributes>Public Attributes</a></li>
+<li><a href=#detailed-description>Detailed Description</a></li>
+<li><a href=#public-functions-documentation>Public Functions Documentation</a>
+<ul>
+<li><a href=#function-invalid_irq>function invalid_irq</a></li>
+</ul>
+</li>
+<li><a href=#public-attributes-documentation>Public Attributes Documentation</a>
+<ul>
+<li><a href=#variable-begin>variable begin</a></li>
+<li><a href=#variable-invalid>variable invalid</a></li>
+<li><a href=#variable-end>variable end</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
 <div id=head-tags>
 </div>
-<div id=chapter>
 <main id=body-inner>
-<span id=sidebar-toggle-span>
-<a href=# id=sidebar-toggle data-sidebar-toggle><i class="fas fa-bars"></i> navigation</a>
-</span>
-<h1 id=welcome>Welcome!</h1>
-<p>TBD</p>
-</div>
+<h1>embed::cortex_m::interrupt::invalid_irq</h1>
+<p><strong>embed::cortex_m::interrupt::invalid_irq Struct Reference</strong></p>
+<p>An error indicating that an invalid IRQ has been passed to the interrupt class which is outside of the bounds of the interrupt vector table. <a href=#detailed-description>More&mldr;</a></p>
+<p><code>#include &lt;interrupt.hpp></code></p>
+<h2 id=public-functions>Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong><a href=classes/structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq/#function-invalid-irq>invalid_irq</a></strong>(<a href=classes/classembed_1_1cortex__m_1_1interrupt_1_1irq__t/>irq_t</a> p_irq)Construct a new invalid irq object.</td>
+</tr>
+</tbody>
+</table>
+<h2 id=public-attributes>Public Attributes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>constexpr int</td>
+<td><strong><a href=classes/structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq/#variable-begin>begin</a></strong> Beginning IRQ (always -16)</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href=classes/structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq/#variable-invalid>invalid</a></strong> Offending IRQ number.</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href=classes/structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq/#variable-end>end</a></strong> The last IRQ in the table.</td>
+</tr>
+</tbody>
+</table>
+<h2 id=detailed-description>Detailed Description</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>struct</span> <span style=color:#a6e22e>embed</span><span style=color:#f92672>::</span>cortex_m<span style=color:#f92672>::</span>interrupt<span style=color:#f92672>::</span>invalid_irq;
+</code></pre></div><p>An error indicating that an invalid IRQ has been passed to the interrupt class which is outside of the bounds of the interrupt vector table.</p>
+<p>This sort of error is not usually recoverable and indicates an error in a driver.</p>
+<h2 id=public-functions-documentation>Public Functions Documentation</h2>
+<h3 id=function-invalid_irq>function invalid_irq</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>inline</span> invalid_irq(
+    irq_t p_irq
+)
+</code></pre></div><p>Construct a new invalid irq object.</p>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><strong>p_irq</strong> - the offending IRQ number</li>
+</ul>
+<h2 id=public-attributes-documentation>Public Attributes Documentation</h2>
+<h3 id=variable-begin>variable begin</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>static</span> <span style=color:#66d9ef>constexpr</span> <span style=color:#66d9ef>int</span> begin <span style=color:#f92672>=</span> <span style=color:#f92672>-</span>core_interrupts;
+</code></pre></div><p>Beginning IRQ (always -16)</p>
+<h3 id=variable-invalid>variable invalid</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>int</span> invalid {};
+</code></pre></div><p>Offending IRQ number.</p>
+<h3 id=variable-end>variable end</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>int</span> end {};
+</code></pre></div><p>The last IRQ in the table.</p>
+<hr>
+<p>Updated on 2022-02-11 at 04:23:07 +0000</p>
+<footer class=footline>
+</footer>
 </main>
 </div>
 <div id=navigation>
-<a class="nav nav-next" href=/libarmcortex/guides/ title=Guides><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=/libarmcortex/api/classes/classembed_1_1cortex__m_1_1interrupt/ title=embed::cortex_m::interrupt><i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/libarmcortex/api/classes/classembed_1_1cortex__m_1_1interrupt_1_1irq__t/ title=embed::cortex_m::interrupt::irq_t><i class="fa fa-chevron-right"></i></a>
 </div>
 </div>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
