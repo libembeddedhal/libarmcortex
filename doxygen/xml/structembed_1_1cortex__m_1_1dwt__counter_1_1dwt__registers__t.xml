@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t" kind="struct" language="C++" prot="public">
+    <compoundname>embed::cortex_m::dwt_counter::dwt_registers_t</compoundname>
+    <includes refid="dwt__counter_8hpp" local="no">dwt_counter.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ac4f9cc58983ade09f081fea40de81ba9" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::dwt_registers_t::ctrl</definition>
+        <argsstring></argsstring>
+        <name>ctrl</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::ctrl</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x000 (R/W) Control Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="24" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a2efc837146b5bae4f37128b3950ab3d7" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::dwt_registers_t::cyccnt</definition>
+        <argsstring></argsstring>
+        <name>cyccnt</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::cyccnt</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x004 (R/W) Cycle Count Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="26" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1aa5774d6c394811ef679b5002a4ae188a" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::dwt_registers_t::cpicnt</definition>
+        <argsstring></argsstring>
+        <name>cpicnt</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::cpicnt</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x008 (R/W) CPI Count Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="28" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a86e8f87c1ab1a65247603155f7a97089" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::dwt_registers_t::exccnt</definition>
+        <argsstring></argsstring>
+        <name>exccnt</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::exccnt</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x00C (R/W) Exception Overhead Count Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="30" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1afe9214fe3199fb934037e1d0eeb2ab29" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::dwt_registers_t::sleepcnt</definition>
+        <argsstring></argsstring>
+        <name>sleepcnt</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::sleepcnt</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x010 (R/W) Sleep Count Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="32" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a2e97e3669f7f09c48958b29089d2e3f6" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::dwt_registers_t::lsucnt</definition>
+        <argsstring></argsstring>
+        <name>lsucnt</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::lsucnt</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x014 (R/W) LSU Count Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="34" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ae2160552c68cdf5d255db755b74fa75f" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::dwt_registers_t::foldcnt</definition>
+        <argsstring></argsstring>
+        <name>foldcnt</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::foldcnt</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x018 (R/W) Folded-instruction Count Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="36" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1aefaac4e65f53bc38af6753520ffae517" prot="public" static="no" mutable="no">
+        <type>volatile const uint32_t</type>
+        <definition>volatile const uint32_t embed::cortex_m::dwt_counter::dwt_registers_t::pcsr</definition>
+        <argsstring></argsstring>
+        <name>pcsr</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::pcsr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x01C (R/ ) Program Counter Sample Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="38" column="29" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a13d16fc623810d4ba99017d72370e58f" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::dwt_registers_t::comp0</definition>
+        <argsstring></argsstring>
+        <name>comp0</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::comp0</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x020 (R/W) Comparator Register 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="40" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ad20aaca390e64b96add245307f8b6848" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::dwt_registers_t::mask0</definition>
+        <argsstring></argsstring>
+        <name>mask0</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::mask0</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x024 (R/W) Mask Register 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="42" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a09563e23a57f9ead3fd1ee04c94cc80d" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::dwt_registers_t::function0</definition>
+        <argsstring></argsstring>
+        <name>function0</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::function0</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x028 (R/W) Function Register 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="44" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a9c30396c8e50acc2b28c7359e54c4dc5" prot="public" static="no" mutable="no">
+        <type>std::array&lt; uint32_t, 1 &gt;</type>
+        <definition>std::array&lt;uint32_t, 1&gt; embed::cortex_m::dwt_counter::dwt_registers_t::reserved0</definition>
+        <argsstring></argsstring>
+        <name>reserved0</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::reserved0</qualifiedname>
+        <briefdescription>
+<para>Reserved 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="46" column="16" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a6e5f7e6f8828f63d232e444d4b08430b" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::dwt_registers_t::comp1</definition>
+        <argsstring></argsstring>
+        <name>comp1</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::comp1</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x030 (R/W) Comparator Register 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="48" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ad41753cab76868220e31242fe9f7bd3c" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::dwt_registers_t::mask1</definition>
+        <argsstring></argsstring>
+        <name>mask1</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::mask1</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x034 (R/W) Mask Register 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="50" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a085981461e2a037cb025615b1915efa9" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::dwt_registers_t::function1</definition>
+        <argsstring></argsstring>
+        <name>function1</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::function1</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x038 (R/W) Function Register 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="52" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a0fbe244dd9b2c1f86cff32d22cf223fb" prot="public" static="no" mutable="no">
+        <type>std::array&lt; uint32_t, 1 &gt;</type>
+        <definition>std::array&lt;uint32_t, 1&gt; embed::cortex_m::dwt_counter::dwt_registers_t::reserved1</definition>
+        <argsstring></argsstring>
+        <name>reserved1</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::reserved1</qualifiedname>
+        <briefdescription>
+<para>Reserved 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="54" column="16" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ac8f5f83ad6d7dffa323d2479e6a52cc9" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::dwt_registers_t::comp2</definition>
+        <argsstring></argsstring>
+        <name>comp2</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::comp2</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x040 (R/W) Comparator Register 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="56" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a84ee3e5e117dd039a85a372243bdeff3" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::dwt_registers_t::mask2</definition>
+        <argsstring></argsstring>
+        <name>mask2</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::mask2</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x044 (R/W) Mask Register 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="58" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1aaaafd2b85cd35c91a83ca79e059fdca9" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::dwt_registers_t::function2</definition>
+        <argsstring></argsstring>
+        <name>function2</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::function2</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x048 (R/W) Function Register 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="60" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1aa4804e0e6eeb34b2c7ee4a4efb96f1ea" prot="public" static="no" mutable="no">
+        <type>std::array&lt; uint32_t, 1 &gt;</type>
+        <definition>std::array&lt;uint32_t, 1&gt; embed::cortex_m::dwt_counter::dwt_registers_t::reserved2</definition>
+        <argsstring></argsstring>
+        <name>reserved2</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::reserved2</qualifiedname>
+        <briefdescription>
+<para>Reserved 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="62" column="16" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ae4bec6d13d3ee7b1a539e80ae4a9c1e0" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::dwt_registers_t::comp3</definition>
+        <argsstring></argsstring>
+        <name>comp3</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::comp3</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x050 (R/W) Comparator Register 3. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="64" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a7bb6e20593cc5c668604eed79c4660a6" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::dwt_registers_t::mask3</definition>
+        <argsstring></argsstring>
+        <name>mask3</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::mask3</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x054 (R/W) Mask Register 3. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="66" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a3af1b30bdb51a610c1e16b1183e8ecd7" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::dwt_registers_t::function3</definition>
+        <argsstring></argsstring>
+        <name>function3</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_registers_t::function3</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x058 (R/W) Function Register 3. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="68" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure type to access the Data Watchpoint and Trace Register (DWT). </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="21" column="3" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="22" bodyend="69"/>
+    <listofallmembers>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a13d16fc623810d4ba99017d72370e58f" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>comp0</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a6e5f7e6f8828f63d232e444d4b08430b" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>comp1</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ac8f5f83ad6d7dffa323d2479e6a52cc9" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>comp2</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ae4bec6d13d3ee7b1a539e80ae4a9c1e0" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>comp3</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1aa5774d6c394811ef679b5002a4ae188a" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>cpicnt</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ac4f9cc58983ade09f081fea40de81ba9" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>ctrl</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a2efc837146b5bae4f37128b3950ab3d7" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>cyccnt</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a86e8f87c1ab1a65247603155f7a97089" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>exccnt</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ae2160552c68cdf5d255db755b74fa75f" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>foldcnt</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a09563e23a57f9ead3fd1ee04c94cc80d" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>function0</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a085981461e2a037cb025615b1915efa9" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>function1</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1aaaafd2b85cd35c91a83ca79e059fdca9" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>function2</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a3af1b30bdb51a610c1e16b1183e8ecd7" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>function3</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a2e97e3669f7f09c48958b29089d2e3f6" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>lsucnt</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ad20aaca390e64b96add245307f8b6848" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>mask0</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ad41753cab76868220e31242fe9f7bd3c" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>mask1</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a84ee3e5e117dd039a85a372243bdeff3" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>mask2</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a7bb6e20593cc5c668604eed79c4660a6" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>mask3</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1aefaac4e65f53bc38af6753520ffae517" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>pcsr</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a9c30396c8e50acc2b28c7359e54c4dc5" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>reserved0</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a0fbe244dd9b2c1f86cff32d22cf223fb" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>reserved1</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1aa4804e0e6eeb34b2c7ee4a4efb96f1ea" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>reserved2</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1afe9214fe3199fb934037e1d0eeb2ab29" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::dwt_registers_t</scope><name>sleepcnt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

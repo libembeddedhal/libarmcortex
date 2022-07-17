@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classembed_1_1cortex__m_1_1dwt__counter" kind="class" language="C++" prot="public">
+    <compoundname>embed::cortex_m::dwt_counter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">embed::counter</basecompoundref>
+    <includes refid="dwt__counter_8hpp" local="no">dwt_counter.hpp</includes>
+    <innerclass refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t" prot="public">embed::cortex_m::dwt_counter::core_debug_registers_t</innerclass>
+    <innerclass refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t" prot="public">embed::cortex_m::dwt_counter::dwt_registers_t</innerclass>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classembed_1_1cortex__m_1_1dwt__counter_1ac6a7f148013497387255425c5becbeb6" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr unsigned</type>
+        <definition>constexpr unsigned embed::cortex_m::dwt_counter::core_trace_enable</definition>
+        <argsstring></argsstring>
+        <name>core_trace_enable</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::core_trace_enable</qualifiedname>
+        <initializer>= 1 &lt;&lt; 24U</initializer>
+        <briefdescription>
+<para>This bit must be set to 1 to enable use of the trace and debug blocks: </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Data Watchpoint and Trace (DWT)</para>
+</listitem><listitem><para>Instrumentation Trace Macrocell (ITM)</para>
+</listitem><listitem><para>Embedded Trace Macrocell (ETM)</para>
+</listitem><listitem><para>Trace Port Interface Unit (TPIU). </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="93" column="29" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classembed_1_1cortex__m_1_1dwt__counter_1a454a531ee77457d838d6082ba2d918e5" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr unsigned</type>
+        <definition>constexpr unsigned embed::cortex_m::dwt_counter::enable_cycle_count</definition>
+        <argsstring></argsstring>
+        <name>enable_cycle_count</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::enable_cycle_count</qualifiedname>
+        <initializer>= 1 &lt;&lt; 0</initializer>
+        <briefdescription>
+<para>Mask for turning on cycle counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="96" column="29" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classembed_1_1cortex__m_1_1dwt__counter_1a95f119acdb169c00386af9373062d3ba" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr intptr_t</type>
+        <definition>constexpr intptr_t embed::cortex_m::dwt_counter::dwt_address</definition>
+        <argsstring></argsstring>
+        <name>dwt_address</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_address</qualifiedname>
+        <initializer>= 0xE0001000UL</initializer>
+        <briefdescription>
+<para>Address of the hardware DWT registers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="99" column="29" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classembed_1_1cortex__m_1_1dwt__counter_1a671345582d96853b62628de8361e2be6" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr intptr_t</type>
+        <definition>constexpr intptr_t embed::cortex_m::dwt_counter::core_debug_address</definition>
+        <argsstring></argsstring>
+        <name>core_debug_address</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::core_debug_address</qualifiedname>
+        <initializer>= 0xE000EDF0UL</initializer>
+        <briefdescription>
+<para>Address of the Cortex M CoreDebug module. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="102" column="29" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classembed_1_1cortex__m_1_1dwt__counter_1a23a7ec9ba232158213c9d19772cce0db" prot="private" static="no" mutable="no">
+        <type>embed::frequency</type>
+        <definition>embed::frequency embed::cortex_m::dwt_counter::m_cpu_frequency</definition>
+        <argsstring></argsstring>
+        <name>m_cpu_frequency</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::m_cpu_frequency</qualifiedname>
+        <initializer>{ 1&apos;000&apos;000 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="164" column="20" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1dwt__counter_1ae177355faa38348e6f18df762472c156" prot="public" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto *</type>
+        <definition>static auto * embed::cortex_m::dwt_counter::dwt</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>dwt</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>auto* - Address of the DWT peripheral </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="105" column="15" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="105" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1dwt__counter_1ad1eb94eae63f38951a8cd1e1d01ab273" prot="public" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto *</type>
+        <definition>static auto * embed::cortex_m::dwt_counter::core</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>core</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::core</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>auto* - Address of the Core Debug module </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="115" column="15" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="115" bodyend="122"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1dwt__counter_1acb5be7061261b5e23b1c7af99283df3a" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>embed::cortex_m::dwt_counter::dwt_counter</definition>
+        <argsstring>(embed::frequency p_cpu_frequency) noexcept</argsstring>
+        <name>dwt_counter</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::dwt_counter</qualifiedname>
+        <param>
+          <type>embed::frequency</type>
+          <declname>p_cpu_frequency</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new dwt counter object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_cpu_frequency</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the operating frequency of the CPU </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="129" column="3" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="129" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1dwt__counter_1a05ed772d18aee690a661667ca5bdbf01" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void embed::cortex_m::dwt_counter::register_cpu_frequency</definition>
+        <argsstring>(embed::frequency p_cpu_frequency) noexcept</argsstring>
+        <name>register_cpu_frequency</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::register_cpu_frequency</qualifiedname>
+        <param>
+          <type>embed::frequency</type>
+          <declname>p_cpu_frequency</declname>
+        </param>
+        <briefdescription>
+<para>Inform the driver of the operating frequency of the CPU in order to generate the correct uptime. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use this when the CPU&apos;s operating frequency has changed and no longer matches the frequency supplied to the constructor. Care should be taken when expecting this function when there is the potentially other parts of the system that depend on this counter&apos;s uptime to operate.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_cpu_frequency</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the operating frequency of the CPU </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="153" column="8" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="153" bodyend="156"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1dwt__counter_1a05aaac083784c7aad0970a41aa5c0875" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>boost::leaf::result&lt; uptime_t &gt;</type>
+        <definition>boost::leaf::result&lt; uptime_t &gt; embed::cortex_m::dwt_counter::driver_uptime</definition>
+        <argsstring>() noexcept override</argsstring>
+        <name>driver_uptime</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::driver_uptime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="159" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="159" bodyend="162"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A counter with a frequency fixed to the CPU clock rate. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This driver is supported for Cortex M3 devices and above. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>embed::cortex_m::dwt_counter</label>
+        <link refid="classembed_1_1cortex__m_1_1dwt__counter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>embed::counter</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>embed::cortex_m::dwt_counter</label>
+        <link refid="classembed_1_1cortex__m_1_1dwt__counter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>embed::counter</label>
+      </node>
+    </collaborationgraph>
+    <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="17" column="1" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="18" bodyend="165"/>
+    <listofallmembers>
+      <member refid="classembed_1_1cortex__m_1_1dwt__counter_1ad1eb94eae63f38951a8cd1e1d01ab273" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter</scope><name>core</name></member>
+      <member refid="classembed_1_1cortex__m_1_1dwt__counter_1a671345582d96853b62628de8361e2be6" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter</scope><name>core_debug_address</name></member>
+      <member refid="classembed_1_1cortex__m_1_1dwt__counter_1ac6a7f148013497387255425c5becbeb6" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter</scope><name>core_trace_enable</name></member>
+      <member refid="classembed_1_1cortex__m_1_1dwt__counter_1a05aaac083784c7aad0970a41aa5c0875" prot="private" virt="non-virtual"><scope>embed::cortex_m::dwt_counter</scope><name>driver_uptime</name></member>
+      <member refid="classembed_1_1cortex__m_1_1dwt__counter_1ae177355faa38348e6f18df762472c156" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter</scope><name>dwt</name></member>
+      <member refid="classembed_1_1cortex__m_1_1dwt__counter_1a95f119acdb169c00386af9373062d3ba" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter</scope><name>dwt_address</name></member>
+      <member refid="classembed_1_1cortex__m_1_1dwt__counter_1acb5be7061261b5e23b1c7af99283df3a" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter</scope><name>dwt_counter</name></member>
+      <member refid="classembed_1_1cortex__m_1_1dwt__counter_1a454a531ee77457d838d6082ba2d918e5" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter</scope><name>enable_cycle_count</name></member>
+      <member refid="classembed_1_1cortex__m_1_1dwt__counter_1a23a7ec9ba232158213c9d19772cce0db" prot="private" virt="non-virtual"><scope>embed::cortex_m::dwt_counter</scope><name>m_cpu_frequency</name></member>
+      <member refid="classembed_1_1cortex__m_1_1dwt__counter_1a05ed772d18aee690a661667ca5bdbf01" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter</scope><name>register_cpu_frequency</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,405 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classembed_1_1cortex__m_1_1interrupt" kind="class" language="C++" prot="public">
+    <compoundname>embed::cortex_m::interrupt</compoundname>
+    <includes refid="interrupt_8hpp" local="no">interrupt.hpp</includes>
+    <innerclass refid="structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq" prot="public">embed::cortex_m::interrupt::invalid_irq</innerclass>
+    <innerclass refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t" prot="public">embed::cortex_m::interrupt::irq_t</innerclass>
+    <innerclass refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t" prot="public">embed::cortex_m::interrupt::nvic_register_t</innerclass>
+    <innerclass refid="structembed_1_1cortex__m_1_1interrupt_1_1vector__table__not__initialized" prot="public">embed::cortex_m::interrupt::vector_table_not_initialized</innerclass>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classembed_1_1cortex__m_1_1interrupt_1a004e94ae690d9878ad0f902b2ea30ce1" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr intptr_t</type>
+        <definition>constexpr intptr_t embed::cortex_m::interrupt::nvic_address</definition>
+        <argsstring></argsstring>
+        <name>nvic_address</name>
+        <qualifiedname>embed::cortex_m::interrupt::nvic_address</qualifiedname>
+        <initializer>= 0xE000&apos;E100UL</initializer>
+        <briefdescription>
+<para>NVIC address. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="57" column="29" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classembed_1_1cortex__m_1_1interrupt_1a50c343dc9b05c5ae2ce2cd7dbed43809" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int embed::cortex_m::interrupt::core_interrupts</definition>
+        <argsstring></argsstring>
+        <name>core_interrupts</name>
+        <qualifiedname>embed::cortex_m::interrupt::core_interrupts</qualifiedname>
+        <initializer>= 16</initializer>
+        <briefdescription>
+<para>The core interrupts that all cortex m3, m4, m7 processors have. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="60" column="24" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classembed_1_1cortex__m_1_1interrupt_1ad04eb038f65e47f9c06e833ce80ea519" prot="public" static="yes" mutable="no">
+        <type>std::span&lt; interrupt_pointer &gt;</type>
+        <definition>std::span&lt;interrupt_pointer&gt; embed::cortex_m::interrupt::vector_table</definition>
+        <argsstring></argsstring>
+        <name>vector_table</name>
+        <qualifiedname>embed::cortex_m::interrupt::vector_table</qualifiedname>
+        <briefdescription>
+<para>Pointer to a statically allocated interrupt vector table. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="73" column="27" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classembed_1_1cortex__m_1_1interrupt_1a7657fd661b1832f17022bcf57c559990" prot="private" static="no" mutable="no">
+        <type><ref refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t" kindref="compound">irq_t</ref></type>
+        <definition>irq_t embed::cortex_m::interrupt::m_irq</definition>
+        <argsstring></argsstring>
+        <name>m_irq</name>
+        <qualifiedname>embed::cortex_m::interrupt::m_irq</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="444" column="9" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1aeb4a534c7a7fb61a3530072a28e7b5fd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto *</type>
+        <definition>static auto * embed::cortex_m::interrupt::nvic</definition>
+        <argsstring>()</argsstring>
+        <name>nvic</name>
+        <qualifiedname>embed::cortex_m::interrupt::nvic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>auto* - Address of the Nested Vector Interrupt Controller register </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="63" column="15" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="63" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1a6d1ba6aadcded48be3ed27d293d65779" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void embed::cortex_m::interrupt::nop</definition>
+        <argsstring>()</argsstring>
+        <name>nop</name>
+        <qualifiedname>embed::cortex_m::interrupt::nop</qualifiedname>
+        <briefdescription>
+<para>Place holder interrupt that performs no work. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="235" column="15" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="235" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1a295015f5b14cb95d7e7908e3ab18ce1f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>VectorCount</declname>
+            <defname>VectorCount</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void embed::cortex_m::interrupt::initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <qualifiedname>embed::cortex_m::interrupt::initialize</qualifiedname>
+        <briefdescription>
+<para>Initializes the interrupt vector table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This template function does the following:<itemizedlist>
+<listitem><para>Statically allocates a 512-byte aligned an interrupt vector table the size of VectorCount.</para>
+</listitem><listitem><para>Set the default handlers for all interrupt vectors to the &quot;nop&quot; function which does nothing</para>
+</listitem><listitem><para>Set vector_table span to the statically allocated vector table.</para>
+</listitem><listitem><para>Finally it relocates the system&apos;s interrupt vector table away from the hard coded vector table in ROM/Flash memory to the statically allocated table in RAM.</para>
+</listitem></itemizedlist>
+</para>
+<para>Internally, this function checks if it has been called before and will simply return early if so. Making this function safe to call multiple times so long as the VectorCount template parameter is the same with each invocation.</para>
+<para>Calling this function with differing VectorCount values will result in multiple statically allocated interrupt vector tables, which will simply waste space in RAM. Only the first call is used as the IVT.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>VectorCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the number of interrupts available for this system </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="262" column="15" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="262" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1a41b0b48496b94c484b017e7369a5fc51" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>VectorCount</declname>
+            <defname>VectorCount</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void embed::cortex_m::interrupt::reinitialize</definition>
+        <argsstring>()</argsstring>
+        <name>reinitialize</name>
+        <qualifiedname>embed::cortex_m::interrupt::reinitialize</qualifiedname>
+        <briefdescription>
+<para>Reinitialize vector table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Will reset the entries of the vector table. Careful to not use this after any drivers have already put entries on to the vector table. This will also disable all interrupts currently enabled on the system.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>VectorCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the number of interrupts available for this system </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="297" column="15" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="297" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1a3e06e906d013303f1564f0e1c3605c3e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const auto &amp;</type>
+        <definition>static const auto &amp; embed::cortex_m::interrupt::get_vector_table</definition>
+        <argsstring>()</argsstring>
+        <name>get_vector_table</name>
+        <qualifiedname>embed::cortex_m::interrupt::get_vector_table</qualifiedname>
+        <briefdescription>
+<para>Get a reference to interrupt vector table object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const auto&amp; - interrupt vector table </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="323" column="21" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="323" bodyend="323"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1ae9dcee8373ecb40df26c777a1074e8ca" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>embed::cortex_m::interrupt::interrupt</definition>
+        <argsstring>(irq_t p_irq)</argsstring>
+        <name>interrupt</name>
+        <qualifiedname>embed::cortex_m::interrupt::interrupt</qualifiedname>
+        <param>
+          <type><ref refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t" kindref="compound">irq_t</ref></type>
+          <declname>p_irq</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new interrupt object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_irq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- interrupt to configure </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="330" column="12" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="330" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1ac46bd0a4ca050a8d41c394a1080f52bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::leaf::result&lt; void &gt;</type>
+        <definition>boost::leaf::result&lt; void &gt; embed::cortex_m::interrupt::enable</definition>
+        <argsstring>(interrupt_pointer p_handler)</argsstring>
+        <name>enable</name>
+        <qualifiedname>embed::cortex_m::interrupt::enable</qualifiedname>
+        <param>
+          <type>interrupt_pointer</type>
+          <declname>p_handler</declname>
+        </param>
+        <briefdescription>
+<para>enable interrupt and set the service routine handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the interrupt service routine handler to be executed when the hardware interrupt is fired. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true - successfully installed handler and enabled interrupt </para>
+</simplesect>
+<simplesect kind="return"><para>false - irq value is outside of the bounds of the table </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="342" column="24" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="342" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1a2b5b1eb8840c207b941f456657a49b8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::leaf::result&lt; void &gt;</type>
+        <definition>boost::leaf::result&lt; void &gt; embed::cortex_m::interrupt::disable</definition>
+        <argsstring>()</argsstring>
+        <name>disable</name>
+        <qualifiedname>embed::cortex_m::interrupt::disable</qualifiedname>
+        <briefdescription>
+<para>disable interrupt and set the service routine handler to &quot;nop&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true - successfully disabled interrupt </para>
+</simplesect>
+<simplesect kind="return"><para>false - irq value is outside of the bounds of the table </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="360" column="24" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="360" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1af79ed42515f4ae295fe2410fd8a7e46c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::leaf::result&lt; bool &gt;</type>
+        <definition>boost::leaf::result&lt; bool &gt; embed::cortex_m::interrupt::verify_vector_enabled</definition>
+        <argsstring>(interrupt_pointer p_handler)</argsstring>
+        <name>verify_vector_enabled</name>
+        <qualifiedname>embed::cortex_m::interrupt::verify_vector_enabled</qualifiedname>
+        <param>
+          <type>interrupt_pointer</type>
+          <declname>p_handler</declname>
+        </param>
+        <briefdescription>
+<para>determine if a particular handler has been put into the interrupt vector table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Generally used by unit testing code.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the handler to check against </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true - the handler is equal to the handler in the table </para>
+</simplesect>
+<simplesect kind="return"><para>false - the handler is not at this index in the table </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="382" column="24" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="382" bodyend="401"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1adbf5fbfbe82271902d4d787d029af58f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::leaf::result&lt; void &gt;</type>
+        <definition>boost::leaf::result&lt; void &gt; embed::cortex_m::interrupt::sanity_check</definition>
+        <argsstring>()</argsstring>
+        <name>sanity_check</name>
+        <qualifiedname>embed::cortex_m::interrupt::sanity_check</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="404" column="23" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="404" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1a625ad6a2d7beef468bc930f15ca2f30e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool embed::cortex_m::interrupt::vector_table_is_initialized</definition>
+        <argsstring>()</argsstring>
+        <name>vector_table_is_initialized</name>
+        <qualifiedname>embed::cortex_m::interrupt::vector_table_is_initialized</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="417" column="8" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="417" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1a5373439f47aaacf2b1bfddf4d9a29f78" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void embed::cortex_m::interrupt::nvic_enable_irq</definition>
+        <argsstring>()</argsstring>
+        <name>nvic_enable_irq</name>
+        <qualifiedname>embed::cortex_m::interrupt::nvic_enable_irq</qualifiedname>
+        <briefdescription>
+<para>Enables a device-specific interrupt in the NVIC interrupt controller. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="427" column="8" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="427" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1abf0fe3f3b60a03aa523bc8e51f08f86e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void embed::cortex_m::interrupt::nvic_disable_irq</definition>
+        <argsstring>()</argsstring>
+        <name>nvic_disable_irq</name>
+        <qualifiedname>embed::cortex_m::interrupt::nvic_disable_irq</qualifiedname>
+        <briefdescription>
+<para>Disables a device-specific interrupt in the NVIC interrupt controller. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="438" column="8" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="438" bodyend="442"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Cortex M series interrupt controller. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="22" column="1" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="23" bodyend="445"/>
+    <listofallmembers>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1a50c343dc9b05c5ae2ce2cd7dbed43809" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt</scope><name>core_interrupts</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1a2b5b1eb8840c207b941f456657a49b8e" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt</scope><name>disable</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1ac46bd0a4ca050a8d41c394a1080f52bb" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt</scope><name>enable</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1a3e06e906d013303f1564f0e1c3605c3e" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt</scope><name>get_vector_table</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1a295015f5b14cb95d7e7908e3ab18ce1f" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt</scope><name>initialize</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1ae9dcee8373ecb40df26c777a1074e8ca" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt</scope><name>interrupt</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1a7657fd661b1832f17022bcf57c559990" prot="private" virt="non-virtual"><scope>embed::cortex_m::interrupt</scope><name>m_irq</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1a6d1ba6aadcded48be3ed27d293d65779" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt</scope><name>nop</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1aeb4a534c7a7fb61a3530072a28e7b5fd" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt</scope><name>nvic</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1a004e94ae690d9878ad0f902b2ea30ce1" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt</scope><name>nvic_address</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1abf0fe3f3b60a03aa523bc8e51f08f86e" prot="private" virt="non-virtual"><scope>embed::cortex_m::interrupt</scope><name>nvic_disable_irq</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1a5373439f47aaacf2b1bfddf4d9a29f78" prot="private" virt="non-virtual"><scope>embed::cortex_m::interrupt</scope><name>nvic_enable_irq</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1a41b0b48496b94c484b017e7369a5fc51" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt</scope><name>reinitialize</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1adbf5fbfbe82271902d4d787d029af58f" prot="private" virt="non-virtual"><scope>embed::cortex_m::interrupt</scope><name>sanity_check</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1ad04eb038f65e47f9c06e833ce80ea519" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt</scope><name>vector_table</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1a625ad6a2d7beef468bc930f15ca2f30e" prot="private" virt="non-virtual"><scope>embed::cortex_m::interrupt</scope><name>vector_table_is_initialized</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1af79ed42515f4ae295fe2410fd8a7e46c" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt</scope><name>verify_vector_enabled</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

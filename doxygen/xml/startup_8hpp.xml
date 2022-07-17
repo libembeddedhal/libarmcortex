@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="startup_8hpp" kind="file" language="C++">
+    <compoundname>startup.hpp</compoundname>
+    <includes local="no">cstdint</includes>
+    <includes local="no">cstring</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/github/workspace/include/libarmcortex/startup.hpp</label>
+        <link refid="startup_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cstdint</label>
+      </node>
+      <node id="3">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceembed">embed</innernamespace>
+    <innernamespace refid="namespaceembed_1_1cortex__m">embed::cortex_m</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="startup_8hpp_1af4bc07887672145e5b08984970e47257" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t __data_start</definition>
+        <argsstring></argsstring>
+        <name>__data_start</name>
+        <briefdescription>
+<para>this symbol is placed at the start of the data section in RAM. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/startup.hpp" line="14" column="19" declfile="/github/workspace/include/libarmcortex/startup.hpp" declline="14" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="variable" id="startup_8hpp_1a9dbdae52e1f60bac649347621fb108ee" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t __data_source</definition>
+        <argsstring></argsstring>
+        <name>__data_source</name>
+        <briefdescription>
+<para>this symbol is place at the start of the data contents in ROM. This is where the globally defined values for each statically allocated variable is saved. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/startup.hpp" line="21" column="19" declfile="/github/workspace/include/libarmcortex/startup.hpp" declline="21" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="variable" id="startup_8hpp_1acf959a9ccfe5ca5681d5c9ce6f7d2055" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t __data_size</definition>
+        <argsstring></argsstring>
+        <name>__data_size</name>
+        <briefdescription>
+<para>This is the length of the data to be copied from ROM to RAM. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/startup.hpp" line="26" column="19" declfile="/github/workspace/include/libarmcortex/startup.hpp" declline="26" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="variable" id="startup_8hpp_1af213076a56bd1666772f7e3a2e340c03" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t __bss_start</definition>
+        <argsstring></argsstring>
+        <name>__bss_start</name>
+        <briefdescription>
+<para>this symbol is placed at the start of the bss section in RAM. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/startup.hpp" line="31" column="19" declfile="/github/workspace/include/libarmcortex/startup.hpp" declline="31" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="variable" id="startup_8hpp_1aae01eee6536b4531505b051c40bceaa1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t __bss_size</definition>
+        <argsstring></argsstring>
+        <name>__bss_size</name>
+        <briefdescription>
+<para>This is the length of the bss section to write zeros to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/startup.hpp" line="36" column="19" declfile="/github/workspace/include/libarmcortex/startup.hpp" declline="36" declcolumn="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>These<sp/>need<sp/>to<sp/>be<sp/>supplied<sp/>by<sp/>the<sp/>linker<sp/>script<sp/>if<sp/>the<sp/>application<sp/>developer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>order<sp/>to<sp/>call<sp/>embed::cortex::initialize_data_section()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/>__data_start;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/>__data_source;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/>__data_size;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/>__bss_start;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint32_t<sp/>__bss_size;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">embed::cortex_m<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initialize_data_section()</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>statically<sp/>allocated<sp/>data<sp/>by<sp/>coping<sp/>the<sp/>data<sp/>section<sp/>from<sp/>ROM<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>RAM.<sp/>CRT0.o/.s<sp/>does<sp/>not<sp/>perform<sp/>.data<sp/>section<sp/>initialization<sp/>so<sp/>it<sp/>must<sp/>be</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>done<sp/>by<sp/>initialize_platform.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>intptr_t<sp/>data_size<sp/>=<sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">intptr_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(&amp;__data_size);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>memcpy(&amp;__data_start,<sp/>&amp;__data_source,<sp/>data_size);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initialize_bss_section()</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>statically<sp/>allocated<sp/>data<sp/>by<sp/>coping<sp/>the<sp/>data<sp/>section<sp/>from<sp/>ROM<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>RAM.<sp/>CRT0.o/.s<sp/>does<sp/>not<sp/>perform<sp/>.data<sp/>section<sp/>initialization<sp/>so<sp/>it<sp/>must<sp/>be</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>done<sp/>by<sp/>initialize_platform.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>intptr_t<sp/>bss_size<sp/>=<sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">intptr_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(&amp;__bss_size);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>memset(&amp;__bss_start,<sp/>0,<sp/>bss_size);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>embed::cortex_m</highlight></codeline>
+    </programlisting>
+    <location file="/github/workspace/include/libarmcortex/startup.hpp"/>
+  </compounddef>
+</doxygen>

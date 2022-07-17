@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structembed_1_1cortex__m_1_1systick__timer_1_1registers" kind="struct" language="C++" prot="public">
+    <compoundname>embed::cortex_m::systick_timer::registers</compoundname>
+    <includes refid="systick__timer_8hpp" local="no">systick_timer.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1systick__timer_1_1registers_1aebbb96490c1cba6e7319770aa365295f" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::systick_timer::registers::control</definition>
+        <argsstring></argsstring>
+        <name>control</name>
+        <qualifiedname>embed::cortex_m::systick_timer::registers::control</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x000 (R/W) SysTick Control and Status Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="29" column="23" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1systick__timer_1_1registers_1ae136cd609f43f944efd6e728c7d7e716" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::systick_timer::registers::reload</definition>
+        <argsstring></argsstring>
+        <name>reload</name>
+        <qualifiedname>embed::cortex_m::systick_timer::registers::reload</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x004 (R/W) SysTick Reload Value Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="31" column="23" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1systick__timer_1_1registers_1a42e3fc4837dc413a967f9784cbf68422" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::systick_timer::registers::current_value</definition>
+        <argsstring></argsstring>
+        <name>current_value</name>
+        <qualifiedname>embed::cortex_m::systick_timer::registers::current_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x008 (R/W) SysTick Current Value Register NOTE: Setting this value to anything will zero it out. Setting this zero will NOT cause the SysTick interrupt to be fired. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="35" column="23" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1systick__timer_1_1registers_1a7647db27b95c3a4bec7f12f7d450b87f" prot="public" static="no" mutable="no">
+        <type>const volatile uint32_t</type>
+        <definition>const volatile uint32_t embed::cortex_m::systick_timer::registers::calib</definition>
+        <argsstring></argsstring>
+        <name>calib</name>
+        <qualifiedname>embed::cortex_m::systick_timer::registers::calib</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x00C (R/ ) SysTick Calibration Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="37" column="29" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure type to access the System Timer (SysTick). </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="26" column="3" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="27" bodyend="38"/>
+    <listofallmembers>
+      <member refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers_1a7647db27b95c3a4bec7f12f7d450b87f" prot="public" virt="non-virtual"><scope>embed::cortex_m::systick_timer::registers</scope><name>calib</name></member>
+      <member refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers_1aebbb96490c1cba6e7319770aa365295f" prot="public" virt="non-virtual"><scope>embed::cortex_m::systick_timer::registers</scope><name>control</name></member>
+      <member refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers_1a42e3fc4837dc413a967f9784cbf68422" prot="public" virt="non-virtual"><scope>embed::cortex_m::systick_timer::registers</scope><name>current_value</name></member>
+      <member refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers_1ae136cd609f43f944efd6e728c7d7e716" prot="public" virt="non-virtual"><scope>embed::cortex_m::systick_timer::registers</scope><name>reload</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

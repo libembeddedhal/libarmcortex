@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classembed_1_1cortex__m_1_1systick__timer" kind="class" language="C++" prot="public">
+    <compoundname>embed::cortex_m::systick_timer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">embed::timer</basecompoundref>
+    <includes refid="systick__timer_8hpp" local="no">systick_timer.hpp</includes>
+    <innerclass refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register" prot="public">embed::cortex_m::systick_timer::control_register</innerclass>
+    <innerclass refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers" prot="public">embed::cortex_m::systick_timer::registers</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classembed_1_1cortex__m_1_1systick__timer_1af3e90c03275d038bd0e6deb5a5a05cfc" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>clock_source</name>
+        <qualifiedname>embed::cortex_m::systick_timer::clock_source</qualifiedname>
+        <enumvalue id="classembed_1_1cortex__m_1_1systick__timer_1af3e90c03275d038bd0e6deb5a5a05cfca6a21b6995a068148bbb65c8f949b3fb2" prot="public">
+          <name>external</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use an external clock source. What this source is depends on the architecture and configuration of the platform. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classembed_1_1cortex__m_1_1systick__timer_1af3e90c03275d038bd0e6deb5a5a05cfca649ce0650379a0aaff63c1ce257350de" prot="public">
+          <name>processor</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Use the clock given to the CPU. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines the set of clock sources for the SysTick timer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="67" column="3" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="68" bodyend="74"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classembed_1_1cortex__m_1_1systick__timer_1a41c6e617bd2dea7e55888554f24ea204" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr intptr_t</type>
+        <definition>constexpr intptr_t embed::cortex_m::systick_timer::address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <qualifiedname>embed::cortex_m::systick_timer::address</qualifiedname>
+        <initializer>= 0xE000&apos;E010UL</initializer>
+        <briefdescription>
+<para>The address of the sys_tick register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="77" column="29" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classembed_1_1cortex__m_1_1systick__timer_1a1a4162befef6bd620fb5f100476d6be8" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int embed::cortex_m::systick_timer::irq</definition>
+        <argsstring></argsstring>
+        <name>irq</name>
+        <qualifiedname>embed::cortex_m::systick_timer::irq</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+<para>The IRQ number for the SysTick interrupt vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="79" column="24" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classembed_1_1cortex__m_1_1systick__timer_1a84cb713512e3bbfefe91bd310d4d6013" prot="private" static="no" mutable="no">
+        <type>frequency</type>
+        <definition>frequency embed::cortex_m::systick_timer::m_frequency</definition>
+        <argsstring></argsstring>
+        <name>m_frequency</name>
+        <qualifiedname>embed::cortex_m::systick_timer::m_frequency</qualifiedname>
+        <initializer>= frequency(1&apos;000&apos;000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="225" column="13" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1systick__timer_1a722def62c9007ebcce7217bdaa2dc3fe" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto *</type>
+        <definition>static auto * embed::cortex_m::systick_timer::sys_tick</definition>
+        <argsstring>()</argsstring>
+        <name>sys_tick</name>
+        <qualifiedname>embed::cortex_m::systick_timer::sys_tick</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>auto* - Address of the ARM Cortex SysTick peripheral </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="82" column="15" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="82" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1systick__timer_1ac669554c16f774ac6edfb4d090d5298b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>embed::cortex_m::systick_timer::systick_timer</definition>
+        <argsstring>(frequency p_frequency, clock_source p_source=clock_source::processor)</argsstring>
+        <name>systick_timer</name>
+        <qualifiedname>embed::cortex_m::systick_timer::systick_timer</qualifiedname>
+        <param>
+          <type>frequency</type>
+          <declname>p_frequency</declname>
+        </param>
+        <param>
+          <type><ref refid="classembed_1_1cortex__m_1_1systick__timer_1af3e90c03275d038bd0e6deb5a5a05cfc" kindref="member">clock_source</ref></type>
+          <declname>p_source</declname>
+          <defval><ref refid="classembed_1_1cortex__m_1_1systick__timer_1af3e90c03275d038bd0e6deb5a5a05cfca649ce0650379a0aaff63c1ce257350de" kindref="member">clock_source::processor</ref></defval>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="classembed_1_1cortex__m_1_1systick__timer" kindref="compound">systick_timer</ref> timer object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_frequency</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the clock source&apos;s frequency </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the source of the clock to the systick timer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="97" column="3" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="97" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1systick__timer_1afaaf355185db02ebc16e23dd5700879b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void embed::cortex_m::systick_timer::register_cpu_frequency</definition>
+        <argsstring>(frequency p_frequency, clock_source p_source=clock_source::processor)</argsstring>
+        <name>register_cpu_frequency</name>
+        <qualifiedname>embed::cortex_m::systick_timer::register_cpu_frequency</qualifiedname>
+        <param>
+          <type>frequency</type>
+          <declname>p_frequency</declname>
+        </param>
+        <param>
+          <type><ref refid="classembed_1_1cortex__m_1_1systick__timer_1af3e90c03275d038bd0e6deb5a5a05cfc" kindref="member">clock_source</ref></type>
+          <declname>p_source</declname>
+          <defval><ref refid="classembed_1_1cortex__m_1_1systick__timer_1af3e90c03275d038bd0e6deb5a5a05cfca649ce0650379a0aaff63c1ce257350de" kindref="member">clock_source::processor</ref></defval>
+        </param>
+        <briefdescription>
+<para>Inform the driver of the operating frequency of the CPU in order to generate the correct uptime. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use this when the CPU&apos;s operating frequency has changed and no longer matches the frequency supplied to the constructor. Care should be taken when expecting this function when there is the potentially other parts of the system that depend on this counter&apos;s uptime to operate.</para>
+<para>This will clear any ongoing scheduled events as the timing will no longer be valid.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_frequency</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the clock source&apos;s frequency </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the source of the clock to the systick timer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="119" column="8" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="119" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1systick__timer_1a821ca33257c20508151b8e700c677e44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>embed::cortex_m::systick_timer::~systick_timer</definition>
+        <argsstring>()</argsstring>
+        <name>~systick_timer</name>
+        <qualifiedname>embed::cortex_m::systick_timer::~systick_timer</qualifiedname>
+        <briefdescription>
+<para>Destroy the system timer object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop the timer and disable the interrupt service routine. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="150" column="3" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="150" bodyend="156"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1systick__timer_1af7653f71c8e9e0c335efd4c9109cd6ab" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void embed::cortex_m::systick_timer::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <qualifiedname>embed::cortex_m::systick_timer::start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="159" column="8" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="159" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1systick__timer_1a924cd2178997535c0cc160e813aab9d8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void embed::cortex_m::systick_timer::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <qualifiedname>embed::cortex_m::systick_timer::stop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="164" column="8" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="164" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1systick__timer_1a1874cfcc729b1f6a595c96b9d361f79c" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>boost::leaf::result&lt; bool &gt;</type>
+        <definition>boost::leaf::result&lt; bool &gt; embed::cortex_m::systick_timer::driver_is_running</definition>
+        <argsstring>() noexcept override</argsstring>
+        <name>driver_is_running</name>
+        <qualifiedname>embed::cortex_m::systick_timer::driver_is_running</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="169" column="23" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="169" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1systick__timer_1a7985f9a8b26895727c65fde3c441120d" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>boost::leaf::result&lt; void &gt;</type>
+        <definition>boost::leaf::result&lt; void &gt; embed::cortex_m::systick_timer::driver_clear</definition>
+        <argsstring>() noexcept override</argsstring>
+        <name>driver_clear</name>
+        <qualifiedname>embed::cortex_m::systick_timer::driver_clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="175" column="23" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="175" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1systick__timer_1a4dcfe3e3cafb6ff69d7f26a225a54e3c" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>boost::leaf::result&lt; void &gt;</type>
+        <definition>boost::leaf::result&lt; void &gt; embed::cortex_m::systick_timer::driver_schedule</definition>
+        <argsstring>(std::function&lt; void(void)&gt; p_callback, std::chrono::nanoseconds p_delay) noexcept override</argsstring>
+        <name>driver_schedule</name>
+        <qualifiedname>embed::cortex_m::systick_timer::driver_schedule</qualifiedname>
+        <param>
+          <type>std::function&lt; void(void)&gt;</type>
+          <declname>p_callback</declname>
+        </param>
+        <param>
+          <type>std::chrono::nanoseconds</type>
+          <declname>p_delay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="183" column="23" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="183" bodyend="223"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SysTick driver for the ARM Cortex Mx series chips. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Available in all ARM Cortex M series processors. Provides a generic and simple timer for every platform using these processor. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>embed::cortex_m::systick_timer</label>
+        <link refid="classembed_1_1cortex__m_1_1systick__timer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>embed::timer</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>embed::cortex_m::systick_timer</label>
+        <link refid="classembed_1_1cortex__m_1_1systick__timer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>embed::timer</label>
+      </node>
+    </collaborationgraph>
+    <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="22" column="1" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="23" bodyend="226"/>
+    <listofallmembers>
+      <member refid="classembed_1_1cortex__m_1_1systick__timer_1a41c6e617bd2dea7e55888554f24ea204" prot="public" virt="non-virtual"><scope>embed::cortex_m::systick_timer</scope><name>address</name></member>
+      <member refid="classembed_1_1cortex__m_1_1systick__timer_1af3e90c03275d038bd0e6deb5a5a05cfc" prot="public" virt="non-virtual"><scope>embed::cortex_m::systick_timer</scope><name>clock_source</name></member>
+      <member refid="classembed_1_1cortex__m_1_1systick__timer_1a7985f9a8b26895727c65fde3c441120d" prot="private" virt="non-virtual"><scope>embed::cortex_m::systick_timer</scope><name>driver_clear</name></member>
+      <member refid="classembed_1_1cortex__m_1_1systick__timer_1a1874cfcc729b1f6a595c96b9d361f79c" prot="private" virt="non-virtual"><scope>embed::cortex_m::systick_timer</scope><name>driver_is_running</name></member>
+      <member refid="classembed_1_1cortex__m_1_1systick__timer_1a4dcfe3e3cafb6ff69d7f26a225a54e3c" prot="private" virt="non-virtual"><scope>embed::cortex_m::systick_timer</scope><name>driver_schedule</name></member>
+      <member refid="classembed_1_1cortex__m_1_1systick__timer_1a1a4162befef6bd620fb5f100476d6be8" prot="public" virt="non-virtual"><scope>embed::cortex_m::systick_timer</scope><name>irq</name></member>
+      <member refid="classembed_1_1cortex__m_1_1systick__timer_1a84cb713512e3bbfefe91bd310d4d6013" prot="private" virt="non-virtual"><scope>embed::cortex_m::systick_timer</scope><name>m_frequency</name></member>
+      <member refid="classembed_1_1cortex__m_1_1systick__timer_1afaaf355185db02ebc16e23dd5700879b" prot="public" virt="non-virtual"><scope>embed::cortex_m::systick_timer</scope><name>register_cpu_frequency</name></member>
+      <member refid="classembed_1_1cortex__m_1_1systick__timer_1af7653f71c8e9e0c335efd4c9109cd6ab" prot="private" virt="non-virtual"><scope>embed::cortex_m::systick_timer</scope><name>start</name></member>
+      <member refid="classembed_1_1cortex__m_1_1systick__timer_1a924cd2178997535c0cc160e813aab9d8" prot="private" virt="non-virtual"><scope>embed::cortex_m::systick_timer</scope><name>stop</name></member>
+      <member refid="classembed_1_1cortex__m_1_1systick__timer_1a722def62c9007ebcce7217bdaa2dc3fe" prot="public" virt="non-virtual"><scope>embed::cortex_m::systick_timer</scope><name>sys_tick</name></member>
+      <member refid="classembed_1_1cortex__m_1_1systick__timer_1ac669554c16f774ac6edfb4d090d5298b" prot="public" virt="non-virtual"><scope>embed::cortex_m::systick_timer</scope><name>systick_timer</name></member>
+      <member refid="classembed_1_1cortex__m_1_1systick__timer_1a821ca33257c20508151b8e700c677e44" prot="public" virt="non-virtual"><scope>embed::cortex_m::systick_timer</scope><name>~systick_timer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

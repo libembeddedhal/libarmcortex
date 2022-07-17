@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="dwt__counter_8hpp" kind="file" language="C++">
+    <compoundname>dwt_counter.hpp</compoundname>
+    <includes local="no">array</includes>
+    <includes local="no">cstdint</includes>
+    <includes local="no">libembeddedhal/config.hpp</includes>
+    <includes local="no">libembeddedhal/counter/interface.hpp</includes>
+    <includes local="no">libembeddedhal/overflow_counter.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/github/workspace/include/libarmcortex/dwt_counter.hpp</label>
+        <link refid="dwt__counter_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>array</label>
+      </node>
+      <node id="3">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>libembeddedhal/config.hpp</label>
+      </node>
+      <node id="5">
+        <label>libembeddedhal/counter/interface.hpp</label>
+      </node>
+      <node id="6">
+        <label>libembeddedhal/overflow_counter.hpp</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classembed_1_1cortex__m_1_1dwt__counter" prot="public">embed::cortex_m::dwt_counter</innerclass>
+    <innerclass refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t" prot="public">embed::cortex_m::dwt_counter::dwt_registers_t</innerclass>
+    <innerclass refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t" prot="public">embed::cortex_m::dwt_counter::core_debug_registers_t</innerclass>
+    <innernamespace refid="namespaceembed">embed</innernamespace>
+    <innernamespace refid="namespaceembed_1_1cortex__m">embed::cortex_m</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libembeddedhal/config.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libembeddedhal/counter/interface.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libembeddedhal/overflow_counter.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">embed::cortex_m<sp/>{</highlight></codeline>
+<codeline lineno="17" refid="classembed_1_1cortex__m_1_1dwt__counter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classembed_1_1cortex__m_1_1dwt__counter" kindref="compound">dwt_counter</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>embed::counter</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t" kindref="compound">dwt_registers_t</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ac4f9cc58983ade09f081fea40de81ba9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ac4f9cc58983ade09f081fea40de81ba9" kindref="member">ctrl</ref>;</highlight></codeline>
+<codeline lineno="26" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a2efc837146b5bae4f37128b3950ab3d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a2efc837146b5bae4f37128b3950ab3d7" kindref="member">cyccnt</ref>;</highlight></codeline>
+<codeline lineno="28" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1aa5774d6c394811ef679b5002a4ae188a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1aa5774d6c394811ef679b5002a4ae188a" kindref="member">cpicnt</ref>;</highlight></codeline>
+<codeline lineno="30" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a86e8f87c1ab1a65247603155f7a97089" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a86e8f87c1ab1a65247603155f7a97089" kindref="member">exccnt</ref>;</highlight></codeline>
+<codeline lineno="32" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1afe9214fe3199fb934037e1d0eeb2ab29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1afe9214fe3199fb934037e1d0eeb2ab29" kindref="member">sleepcnt</ref>;</highlight></codeline>
+<codeline lineno="34" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a2e97e3669f7f09c48958b29089d2e3f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a2e97e3669f7f09c48958b29089d2e3f6" kindref="member">lsucnt</ref>;</highlight></codeline>
+<codeline lineno="36" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ae2160552c68cdf5d255db755b74fa75f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ae2160552c68cdf5d255db755b74fa75f" kindref="member">foldcnt</ref>;</highlight></codeline>
+<codeline lineno="38" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1aefaac4e65f53bc38af6753520ffae517" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1aefaac4e65f53bc38af6753520ffae517" kindref="member">pcsr</ref>;</highlight></codeline>
+<codeline lineno="40" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a13d16fc623810d4ba99017d72370e58f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a13d16fc623810d4ba99017d72370e58f" kindref="member">comp0</ref>;</highlight></codeline>
+<codeline lineno="42" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ad20aaca390e64b96add245307f8b6848" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ad20aaca390e64b96add245307f8b6848" kindref="member">mask0</ref>;</highlight></codeline>
+<codeline lineno="44" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a09563e23a57f9ead3fd1ee04c94cc80d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a09563e23a57f9ead3fd1ee04c94cc80d" kindref="member">function0</ref>;</highlight></codeline>
+<codeline lineno="46" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a9c30396c8e50acc2b28c7359e54c4dc5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;uint32_t,<sp/>1&gt;<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a9c30396c8e50acc2b28c7359e54c4dc5" kindref="member">reserved0</ref>;</highlight></codeline>
+<codeline lineno="48" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a6e5f7e6f8828f63d232e444d4b08430b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a6e5f7e6f8828f63d232e444d4b08430b" kindref="member">comp1</ref>;</highlight></codeline>
+<codeline lineno="50" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ad41753cab76868220e31242fe9f7bd3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ad41753cab76868220e31242fe9f7bd3c" kindref="member">mask1</ref>;</highlight></codeline>
+<codeline lineno="52" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a085981461e2a037cb025615b1915efa9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a085981461e2a037cb025615b1915efa9" kindref="member">function1</ref>;</highlight></codeline>
+<codeline lineno="54" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a0fbe244dd9b2c1f86cff32d22cf223fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;uint32_t,<sp/>1&gt;<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a0fbe244dd9b2c1f86cff32d22cf223fb" kindref="member">reserved1</ref>;</highlight></codeline>
+<codeline lineno="56" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ac8f5f83ad6d7dffa323d2479e6a52cc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ac8f5f83ad6d7dffa323d2479e6a52cc9" kindref="member">comp2</ref>;</highlight></codeline>
+<codeline lineno="58" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a84ee3e5e117dd039a85a372243bdeff3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a84ee3e5e117dd039a85a372243bdeff3" kindref="member">mask2</ref>;</highlight></codeline>
+<codeline lineno="60" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1aaaafd2b85cd35c91a83ca79e059fdca9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1aaaafd2b85cd35c91a83ca79e059fdca9" kindref="member">function2</ref>;</highlight></codeline>
+<codeline lineno="62" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1aa4804e0e6eeb34b2c7ee4a4efb96f1ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;uint32_t,<sp/>1&gt;<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1aa4804e0e6eeb34b2c7ee4a4efb96f1ea" kindref="member">reserved2</ref>;</highlight></codeline>
+<codeline lineno="64" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ae4bec6d13d3ee7b1a539e80ae4a9c1e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ae4bec6d13d3ee7b1a539e80ae4a9c1e0" kindref="member">comp3</ref>;</highlight></codeline>
+<codeline lineno="66" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a7bb6e20593cc5c668604eed79c4660a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a7bb6e20593cc5c668604eed79c4660a6" kindref="member">mask3</ref>;</highlight></codeline>
+<codeline lineno="68" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a3af1b30bdb51a610c1e16b1183e8ecd7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a3af1b30bdb51a610c1e16b1183e8ecd7" kindref="member">function3</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t" kindref="compound">core_debug_registers_t</ref></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="75" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t_1a87fa509bc79ec590ea94dddae6947af8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t_1a87fa509bc79ec590ea94dddae6947af8" kindref="member">dhcsr</ref>;</highlight></codeline>
+<codeline lineno="77" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t_1abb3b496557c4fe53c1000f0b2a63755e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t_1abb3b496557c4fe53c1000f0b2a63755e" kindref="member">dcrsr</ref>;</highlight></codeline>
+<codeline lineno="79" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t_1a708da6703d59578c9636a00edea100c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t_1a708da6703d59578c9636a00edea100c7" kindref="member">dcrdr</ref>;</highlight></codeline>
+<codeline lineno="81" refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t_1a85840e292ce321cb3ebb91e6db6a4969" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t_1a85840e292ce321cb3ebb91e6db6a4969" kindref="member">demcr</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classembed_1_1cortex__m_1_1dwt__counter_1ac6a7f148013497387255425c5becbeb6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classembed_1_1cortex__m_1_1dwt__counter_1ac6a7f148013497387255425c5becbeb6" kindref="member">core_trace_enable</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>24U;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="classembed_1_1cortex__m_1_1dwt__counter_1a454a531ee77457d838d6082ba2d918e5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classembed_1_1cortex__m_1_1dwt__counter_1a454a531ee77457d838d6082ba2d918e5" kindref="member">enable_cycle_count</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>0;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="classembed_1_1cortex__m_1_1dwt__counter_1a95f119acdb169c00386af9373062d3ba" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>intptr_t<sp/><ref refid="classembed_1_1cortex__m_1_1dwt__counter_1a95f119acdb169c00386af9373062d3ba" kindref="member">dwt_address</ref><sp/>=<sp/>0xE0001000UL;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="classembed_1_1cortex__m_1_1dwt__counter_1a671345582d96853b62628de8361e2be6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>intptr_t<sp/><ref refid="classembed_1_1cortex__m_1_1dwt__counter_1a671345582d96853b62628de8361e2be6" kindref="member">core_debug_address</ref><sp/>=<sp/>0xE000EDF0UL;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="classembed_1_1cortex__m_1_1dwt__counter_1ae177355faa38348e6f18df762472c156" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/><ref refid="classembed_1_1cortex__m_1_1dwt__counter_1ae177355faa38348e6f18df762472c156" kindref="member">dwt</ref>()<sp/>noexcept</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(embed::is_a_test())<sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t" kindref="compound">dwt_registers_t</ref><sp/>dummy_dwt{};</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;dummy_dwt;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t" kindref="compound">dwt_registers_t</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classembed_1_1cortex__m_1_1dwt__counter_1a95f119acdb169c00386af9373062d3ba" kindref="member">dwt_address</ref>);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="classembed_1_1cortex__m_1_1dwt__counter_1ad1eb94eae63f38951a8cd1e1d01ab273" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/><ref refid="classembed_1_1cortex__m_1_1dwt__counter_1ad1eb94eae63f38951a8cd1e1d01ab273" kindref="member">core</ref>()<sp/>noexcept</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(embed::is_a_test())<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t" kindref="compound">core_debug_registers_t</ref><sp/>dummy_core{};</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;dummy_core;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><ref refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t" kindref="compound">core_debug_registers_t</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classembed_1_1cortex__m_1_1dwt__counter_1a671345582d96853b62628de8361e2be6" kindref="member">core_debug_address</ref>);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="classembed_1_1cortex__m_1_1dwt__counter_1acb5be7061261b5e23b1c7af99283df3a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classembed_1_1cortex__m_1_1dwt__counter_1acb5be7061261b5e23b1c7af99283df3a" kindref="member">dwt_counter</ref>(embed::frequency<sp/>p_cpu_frequency)<sp/>noexcept</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>m_cpu_frequency(p_cpu_frequency)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>trace<sp/>core</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classembed_1_1cortex__m_1_1dwt__counter_1ad1eb94eae63f38951a8cd1e1d01ab273" kindref="member">core</ref>()-&gt;demcr<sp/>=<sp/>(<ref refid="classembed_1_1cortex__m_1_1dwt__counter_1ad1eb94eae63f38951a8cd1e1d01ab273" kindref="member">core</ref>()-&gt;demcr<sp/>|<sp/><ref refid="classembed_1_1cortex__m_1_1dwt__counter_1ac6a7f148013497387255425c5becbeb6" kindref="member">core_trace_enable</ref>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reset<sp/>cycle<sp/>count</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classembed_1_1cortex__m_1_1dwt__counter_1ae177355faa38348e6f18df762472c156" kindref="member">dwt</ref>()-&gt;cyccnt<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Start<sp/>cycle<sp/>count</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classembed_1_1cortex__m_1_1dwt__counter_1ae177355faa38348e6f18df762472c156" kindref="member">dwt</ref>()-&gt;ctrl<sp/>=<sp/>(<ref refid="classembed_1_1cortex__m_1_1dwt__counter_1ae177355faa38348e6f18df762472c156" kindref="member">dwt</ref>()-&gt;ctrl<sp/>|<sp/><ref refid="classembed_1_1cortex__m_1_1dwt__counter_1a454a531ee77457d838d6082ba2d918e5" kindref="member">enable_cycle_count</ref>);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="classembed_1_1cortex__m_1_1dwt__counter_1a05ed772d18aee690a661667ca5bdbf01" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classembed_1_1cortex__m_1_1dwt__counter_1a05ed772d18aee690a661667ca5bdbf01" kindref="member">register_cpu_frequency</ref>(embed::frequency<sp/>p_cpu_frequency)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>m_cpu_frequency<sp/>=<sp/>p_cpu_frequency;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>boost::leaf::result&lt;uptime_t&gt;<sp/>driver_uptime()<sp/>noexcept</highlight><highlight class="keyword"><sp/>override</highlight></codeline>
+<codeline lineno="160"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>uptime_t{<sp/>.frequency<sp/>=<sp/>m_cpu_frequency,<sp/>.count<sp/>=<sp/><ref refid="classembed_1_1cortex__m_1_1dwt__counter_1ae177355faa38348e6f18df762472c156" kindref="member">dwt</ref>()-&gt;cyccnt<sp/>};</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/>embed::frequency<sp/>m_cpu_frequency{<sp/>1&apos;000&apos;000<sp/>};</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>embed::cortex_m</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp"/>
+  </compounddef>
+</doxygen>

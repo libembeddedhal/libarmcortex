@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classembed_1_1cortex__m_1_1system__control" kind="class" language="C++" prot="public">
+    <compoundname>embed::cortex_m::system_control</compoundname>
+    <includes refid="system__control_8hpp" local="no">system_control.hpp</includes>
+    <innerclass refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t" prot="public">embed::cortex_m::system_control::scb_registers_t</innerclass>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classembed_1_1cortex__m_1_1system__control_1a10225a8f0d3ee88bd40c094e40e0f52c" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr intptr_t</type>
+        <definition>constexpr intptr_t embed::cortex_m::system_control::scb_address</definition>
+        <argsstring></argsstring>
+        <name>scb_address</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_address</qualifiedname>
+        <initializer>= 0xE000&apos;ED00UL</initializer>
+        <briefdescription>
+<para>System control block address. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="66" column="29" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1system__control_1afdee24068c81f3c4b47849ae7f8db67b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto *</type>
+        <definition>static auto * embed::cortex_m::system_control::scb</definition>
+        <argsstring>()</argsstring>
+        <name>scb</name>
+        <qualifiedname>embed::cortex_m::system_control::scb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>auto* - Address of the Cortex M system control block register </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="69" column="15" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="69" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1system__control_1aa3a8ac3d0826d7aabfb8114912579ec3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void embed::cortex_m::system_control::initialize_floating_point_unit</definition>
+        <argsstring>()</argsstring>
+        <name>initialize_floating_point_unit</name>
+        <qualifiedname>embed::cortex_m::system_control::initialize_floating_point_unit</qualifiedname>
+        <briefdescription>
+<para>Enable the floating point unit coprocessor within Cortex M4 and above processor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="82" column="8" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="82" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1system__control_1a398a6b79a1b5d8e53d48ad9dd6f86fe8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void embed::cortex_m::system_control::set_interrupt_vector_table_address</definition>
+        <argsstring>(void *p_table_location)</argsstring>
+        <name>set_interrupt_vector_table_address</name>
+        <qualifiedname>embed::cortex_m::system_control::set_interrupt_vector_table_address</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>p_table_location</declname>
+        </param>
+        <briefdescription>
+<para>Set the address of the systems interrupt vector table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The interrupt vector table (IVT) is held in ROM which means that, either the interrupt service routines (ISR) had to be defined at compile time making them immutable at runtime, or that each ISR calls a mutable function pointer which can be changed at runtime.</para>
+<para>The problem with the first option is that it makes writing and using libraries difficult. Usually requiring updates to the IVT manually by the application designer based on what libraries and drivers the application is using.</para>
+<para>The second solution has a problem where the additional another layer of indirection increases interrupt latency. A more critical problem of this approach is that many ISRs take advantage of the state of the system when the ISR runs. For example, context switching in an RTOS needs to be able to see the address of where code was when the interrupt occurred and having an additional point of indirection (i.e. calling a function pointer) will change that location from the task to the ISR that called the context switch function. This will usually result in a fault of some sort.</para>
+<para>Creating an interrupt vector table in RAM and relocating the ISRs there consumes RAM space, but gives great flexibility over the table at runtime.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_table_location</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- address of the interrupt vector table. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="115" column="8" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="115" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1system__control_1aa7e8c25387eb7bdb30438dcf3729346e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * embed::cortex_m::system_control::get_interrupt_vector_table_address</definition>
+        <argsstring>()</argsstring>
+        <name>get_interrupt_vector_table_address</name>
+        <qualifiedname>embed::cortex_m::system_control::get_interrupt_vector_table_address</qualifiedname>
+        <briefdescription>
+<para>Get the address of the systems interrupt vector table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>On reset the VTOR register is set to 0x0000&apos;0000 or nullptr.</para>
+<para><simplesect kind="return"><para>void* - address within VTOR the interrupt vector table relocation register. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="129" column="8" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="129" bodyend="134"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Driver for controlling and inspect various aspects of the Cortex Mx Systems such as interrupt vector table location, fault address locations and fpu (coprocessor) control. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="15" column="1" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="16" bodyend="135"/>
+    <listofallmembers>
+      <member refid="classembed_1_1cortex__m_1_1system__control_1aa7e8c25387eb7bdb30438dcf3729346e" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control</scope><name>get_interrupt_vector_table_address</name></member>
+      <member refid="classembed_1_1cortex__m_1_1system__control_1aa3a8ac3d0826d7aabfb8114912579ec3" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control</scope><name>initialize_floating_point_unit</name></member>
+      <member refid="classembed_1_1cortex__m_1_1system__control_1afdee24068c81f3c4b47849ae7f8db67b" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control</scope><name>scb</name></member>
+      <member refid="classembed_1_1cortex__m_1_1system__control_1a10225a8f0d3ee88bd40c094e40e0f52c" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control</scope><name>scb_address</name></member>
+      <member refid="classembed_1_1cortex__m_1_1system__control_1a398a6b79a1b5d8e53d48ad9dd6f86fe8" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control</scope><name>set_interrupt_vector_table_address</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

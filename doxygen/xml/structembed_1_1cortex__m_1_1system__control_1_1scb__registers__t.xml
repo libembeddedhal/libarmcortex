@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t" kind="struct" language="C++" prot="public">
+    <compoundname>embed::cortex_m::system_control::scb_registers_t</compoundname>
+    <includes refid="system__control_8hpp" local="no">system_control.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1abb36782967ff1eefa1338460e3f35791" prot="public" static="no" mutable="no">
+        <type>const volatile uint32_t</type>
+        <definition>const volatile uint32_t embed::cortex_m::system_control::scb_registers_t::cpuid</definition>
+        <argsstring></argsstring>
+        <name>cpuid</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_registers_t::cpuid</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x000 (R/ ) CPUID Base Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="22" column="29" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a0e85f97dbc6c6b9d624c7239801e13cf" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::system_control::scb_registers_t::icsr</definition>
+        <argsstring></argsstring>
+        <name>icsr</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_registers_t::icsr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x004 (R/W) Interrupt Control and State Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="24" column="23" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1aa92ddf010c733000fca186329fe18c94" prot="public" static="no" mutable="no">
+        <type>volatile intptr_t</type>
+        <definition>volatile intptr_t embed::cortex_m::system_control::scb_registers_t::vtor</definition>
+        <argsstring></argsstring>
+        <name>vtor</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_registers_t::vtor</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x008 (R/W) Vector Table Offset Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="26" column="23" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a256079b738e00bfa25137114c9f6ad73" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::system_control::scb_registers_t::aircr</definition>
+        <argsstring></argsstring>
+        <name>aircr</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_registers_t::aircr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x00C (R/W) Application Interrupt and Reset Control Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="28" column="23" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1af84f214f4ba4710d4fb5c1ec2bff670b" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::system_control::scb_registers_t::scr</definition>
+        <argsstring></argsstring>
+        <name>scr</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_registers_t::scr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x010 (R/W) System Control Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="30" column="23" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a6f0c9372403396c3f8c0c1dfba527932" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::system_control::scb_registers_t::ccr</definition>
+        <argsstring></argsstring>
+        <name>ccr</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_registers_t::ccr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x014 (R/W) Configuration Control Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="32" column="23" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1add246ee559bbe3b0b2b4ec7b6cbb60cd" prot="public" static="no" mutable="no">
+        <type>std::array&lt; volatile uint8_t, 12U &gt;</type>
+        <definition>std::array&lt;volatile uint8_t, 12U&gt; embed::cortex_m::system_control::scb_registers_t::shp</definition>
+        <argsstring></argsstring>
+        <name>shp</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_registers_t::shp</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x018 (R/W) System Handlers Priority Registers (4-7, 8-11, 5) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="34" column="16" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a9cd9416fdcd99a3ea425326dcccb2544" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::system_control::scb_registers_t::shcsr</definition>
+        <argsstring></argsstring>
+        <name>shcsr</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_registers_t::shcsr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x024 (R/W) System Handler Control and State Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="36" column="23" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a14daa81a54b958e26aee06826e66a6ec" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::system_control::scb_registers_t::cfsr</definition>
+        <argsstring></argsstring>
+        <name>cfsr</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_registers_t::cfsr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x028 (R/W) Configurable Fault Status Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="38" column="23" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a681dc64defc325a874b97ffd6e9606a6" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::system_control::scb_registers_t::hfsr</definition>
+        <argsstring></argsstring>
+        <name>hfsr</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_registers_t::hfsr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x02C (R/W) HardFault Status Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="40" column="23" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a4ea127da48a3148c0ad39b1529302bbc" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::system_control::scb_registers_t::dfsr</definition>
+        <argsstring></argsstring>
+        <name>dfsr</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_registers_t::dfsr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x030 (R/W) Debug Fault Status Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="42" column="23" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a5ad13b6b83da21f6310eba8eeac933cb" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::system_control::scb_registers_t::mmfar</definition>
+        <argsstring></argsstring>
+        <name>mmfar</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_registers_t::mmfar</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x034 (R/W) MemManage Fault Address Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="44" column="23" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a19fb7cb4de0219319614a311061d863c" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::system_control::scb_registers_t::bfar</definition>
+        <argsstring></argsstring>
+        <name>bfar</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_registers_t::bfar</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x038 (R/W) BusFault Address Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="46" column="23" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a5533302d0b6ce45f96a0d2f2cb0d61e9" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::system_control::scb_registers_t::afsr</definition>
+        <argsstring></argsstring>
+        <name>afsr</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_registers_t::afsr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x03C (R/W) Auxiliary Fault Status Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="48" column="23" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1ac61b1942f0b09b00ede865b45864139f" prot="public" static="no" mutable="no">
+        <type>const std::array&lt; volatile uint32_t, 2U &gt;</type>
+        <definition>const std::array&lt;volatile uint32_t, 2U&gt; embed::cortex_m::system_control::scb_registers_t::pfr</definition>
+        <argsstring></argsstring>
+        <name>pfr</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_registers_t::pfr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x040 (R/ ) Processor Feature Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="50" column="22" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a8ec8cc61e8d82f662d653b0de241a35b" prot="public" static="no" mutable="no">
+        <type>const volatile uint32_t</type>
+        <definition>const volatile uint32_t embed::cortex_m::system_control::scb_registers_t::dfr</definition>
+        <argsstring></argsstring>
+        <name>dfr</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_registers_t::dfr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x048 (R/ ) Debug Feature Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="52" column="29" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a37be597712bd313f64cd6ea17ed2b027" prot="public" static="no" mutable="no">
+        <type>const volatile uint32_t</type>
+        <definition>const volatile uint32_t embed::cortex_m::system_control::scb_registers_t::adr</definition>
+        <argsstring></argsstring>
+        <name>adr</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_registers_t::adr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x04C (R/ ) Auxiliary Feature Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="54" column="29" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1af5c26f7d05b4bc7d7e7303158d5b6cc3" prot="public" static="no" mutable="no">
+        <type>const std::array&lt; volatile uint32_t, 4U &gt;</type>
+        <definition>const std::array&lt;volatile uint32_t, 4U&gt; embed::cortex_m::system_control::scb_registers_t::mmfr</definition>
+        <argsstring></argsstring>
+        <name>mmfr</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_registers_t::mmfr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x050 (R/ ) Memory Model Feature Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="56" column="22" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a07d66193d30205cfe6d8a5e3e7687686" prot="public" static="no" mutable="no">
+        <type>const std::array&lt; volatile uint32_t, 5U &gt;</type>
+        <definition>const std::array&lt;volatile uint32_t, 5U&gt; embed::cortex_m::system_control::scb_registers_t::isar</definition>
+        <argsstring></argsstring>
+        <name>isar</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_registers_t::isar</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x060 (R/ ) Instruction Set Attributes Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="58" column="22" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1aa01026c45b73a0ccebcf22398b97a9eb" prot="public" static="no" mutable="no">
+        <type>std::array&lt; uint32_t, 5U &gt;</type>
+        <definition>std::array&lt;uint32_t, 5U&gt; embed::cortex_m::system_control::scb_registers_t::reserved0</definition>
+        <argsstring></argsstring>
+        <name>reserved0</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_registers_t::reserved0</qualifiedname>
+        <briefdescription>
+<para>Reserved 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="60" column="16" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a8cd8ad73da97eec2f0dc6c444a56732e" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::system_control::scb_registers_t::cpacr</definition>
+        <argsstring></argsstring>
+        <name>cpacr</name>
+        <qualifiedname>embed::cortex_m::system_control::scb_registers_t::cpacr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x088 (R/W) Coprocessor Access Control Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="62" column="23" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure type to access the System Control Block (SCB). </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/github/workspace/include/libarmcortex/system_control.hpp" line="19" column="3" bodyfile="/github/workspace/include/libarmcortex/system_control.hpp" bodystart="20" bodyend="63"/>
+    <listofallmembers>
+      <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a37be597712bd313f64cd6ea17ed2b027" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control::scb_registers_t</scope><name>adr</name></member>
+      <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a5533302d0b6ce45f96a0d2f2cb0d61e9" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control::scb_registers_t</scope><name>afsr</name></member>
+      <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a256079b738e00bfa25137114c9f6ad73" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control::scb_registers_t</scope><name>aircr</name></member>
+      <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a19fb7cb4de0219319614a311061d863c" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control::scb_registers_t</scope><name>bfar</name></member>
+      <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a6f0c9372403396c3f8c0c1dfba527932" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control::scb_registers_t</scope><name>ccr</name></member>
+      <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a14daa81a54b958e26aee06826e66a6ec" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control::scb_registers_t</scope><name>cfsr</name></member>
+      <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a8cd8ad73da97eec2f0dc6c444a56732e" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control::scb_registers_t</scope><name>cpacr</name></member>
+      <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1abb36782967ff1eefa1338460e3f35791" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control::scb_registers_t</scope><name>cpuid</name></member>
+      <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a8ec8cc61e8d82f662d653b0de241a35b" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control::scb_registers_t</scope><name>dfr</name></member>
+      <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a4ea127da48a3148c0ad39b1529302bbc" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control::scb_registers_t</scope><name>dfsr</name></member>
+      <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a681dc64defc325a874b97ffd6e9606a6" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control::scb_registers_t</scope><name>hfsr</name></member>
+      <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a0e85f97dbc6c6b9d624c7239801e13cf" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control::scb_registers_t</scope><name>icsr</name></member>
+      <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a07d66193d30205cfe6d8a5e3e7687686" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control::scb_registers_t</scope><name>isar</name></member>
+      <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a5ad13b6b83da21f6310eba8eeac933cb" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control::scb_registers_t</scope><name>mmfar</name></member>
+      <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1af5c26f7d05b4bc7d7e7303158d5b6cc3" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control::scb_registers_t</scope><name>mmfr</name></member>
+      <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1ac61b1942f0b09b00ede865b45864139f" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control::scb_registers_t</scope><name>pfr</name></member>
+      <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1aa01026c45b73a0ccebcf22398b97a9eb" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control::scb_registers_t</scope><name>reserved0</name></member>
+      <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1af84f214f4ba4710d4fb5c1ec2bff670b" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control::scb_registers_t</scope><name>scr</name></member>
+      <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a9cd9416fdcd99a3ea425326dcccb2544" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control::scb_registers_t</scope><name>shcsr</name></member>
+      <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1add246ee559bbe3b0b2b4ec7b6cbb60cd" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control::scb_registers_t</scope><name>shp</name></member>
+      <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1aa92ddf010c733000fca186329fe18c94" prot="public" virt="non-virtual"><scope>embed::cortex_m::system_control::scb_registers_t</scope><name>vtor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

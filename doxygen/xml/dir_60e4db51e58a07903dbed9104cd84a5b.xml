@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="dir_60e4db51e58a07903dbed9104cd84a5b" kind="dir">
+    <compoundname>/github/workspace/include/libarmcortex</compoundname>
+    <innerfile refid="dwt__counter_8hpp">dwt_counter.hpp</innerfile>
+    <innerfile refid="interrupt_8hpp">interrupt.hpp</innerfile>
+    <innerfile refid="startup_8hpp">startup.hpp</innerfile>
+    <innerfile refid="system__control_8hpp">system_control.hpp</innerfile>
+    <innerfile refid="systick__timer_8hpp">systick_timer.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/github/workspace/include/libarmcortex/"/>
+  </compounddef>
+</doxygen>

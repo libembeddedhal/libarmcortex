@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classembed_1_1cortex__m_1_1interrupt_1_1irq__t" kind="class" language="C++" prot="public">
+    <compoundname>embed::cortex_m::interrupt::irq_t</compoundname>
+    <includes refid="interrupt_8hpp" local="no">interrupt.hpp</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1ab716fe8a7fae365857780eacfcd93a5a" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t embed::cortex_m::interrupt::irq_t::index_position</definition>
+        <argsstring></argsstring>
+        <name>index_position</name>
+        <qualifiedname>embed::cortex_m::interrupt::irq_t::index_position</qualifiedname>
+        <initializer>= 5</initializer>
+        <briefdescription>
+<para>Bits 5 and above represent which 32-bit word in the iser and icer arrays IRQs enable bit resides. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="118" column="31" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a2e681128f946eef3d98b84d6947cdb3c" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t embed::cortex_m::interrupt::irq_t::enable_mask_code</definition>
+        <argsstring></argsstring>
+        <name>enable_mask_code</name>
+        <qualifiedname>embed::cortex_m::interrupt::irq_t::enable_mask_code</qualifiedname>
+        <initializer>= 0x1F</initializer>
+        <briefdescription>
+<para>Lower 5 bits indicate which bit within the 32-bit word is the enable bit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="125" column="31" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a2fb43a994b1f61c7f684d63ed4194902" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int embed::cortex_m::interrupt::irq_t::m_irq</definition>
+        <argsstring></argsstring>
+        <name>m_irq</name>
+        <qualifiedname>embed::cortex_m::interrupt::irq_t::m_irq</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="184" column="9" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a9a42c8a1e19ae81959d3e5b6a14d3c83" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr embed::cortex_m::interrupt::irq_t::irq_t</definition>
+        <argsstring>(int p_irq)</argsstring>
+        <name>irq_t</name>
+        <qualifiedname>embed::cortex_m::interrupt::irq_t::irq_t</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>p_irq</declname>
+        </param>
+        <briefdescription>
+<para>construct an <ref refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t" kindref="compound">irq_t</ref> from an int </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_irq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- interrupt request number </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="88" column="15" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="88" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1ab18f730555987507c85107065ae09034" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr embed::cortex_m::interrupt::irq_t::irq_t</definition>
+        <argsstring>(irq_t &amp;p_irq)</argsstring>
+        <name>irq_t</name>
+        <qualifiedname>embed::cortex_m::interrupt::irq_t::irq_t</qualifiedname>
+        <param>
+          <type><ref refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t" kindref="compound">irq_t</ref> &amp;</type>
+          <declname>p_irq</declname>
+        </param>
+        <briefdescription>
+<para>copy constructor for <ref refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t" kindref="compound">irq_t</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_irq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- <ref refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t" kindref="compound">irq_t</ref> object to copy </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="97" column="15" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="97" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1ae000c8ed6617135d949735d9c9af9ef0" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t" kindref="compound">irq_t</ref> &amp;</type>
+        <definition>constexpr irq_t &amp; embed::cortex_m::interrupt::irq_t::operator=</definition>
+        <argsstring>(int p_irq)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>embed::cortex_m::interrupt::irq_t::operator=</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>p_irq</declname>
+        </param>
+        <briefdescription>
+<para>operator overload for = int </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_irq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- new irq value to change this irq into </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>constexpr <ref refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t" kindref="compound">irq_t</ref>&amp; - reference to this object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="107" column="21" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="107" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a636de808a58ee07ec720dd7f8cb1a73d" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool embed::cortex_m::interrupt::irq_t::default_enabled</definition>
+        <argsstring>() const</argsstring>
+        <name>default_enabled</name>
+        <qualifiedname>embed::cortex_m::interrupt::irq_t::default_enabled</qualifiedname>
+        <briefdescription>
+<para>Determines if the irq is within the range of ARM. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true - irq is enabled by default </para>
+</simplesect>
+<simplesect kind="return"><para>false - irq must be enabled to work </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="133" column="21" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="133" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a21d9e7361018571b5f34433e88c0e0fc" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr int</type>
+        <definition>constexpr int embed::cortex_m::interrupt::irq_t::register_index</definition>
+        <argsstring>() const</argsstring>
+        <name>register_index</name>
+        <qualifiedname>embed::cortex_m::interrupt::irq_t::register_index</qualifiedname>
+        <briefdescription>
+<para>the enable bit for this interrupt resides within one of the 32-bit registers within the &quot;iser&quot; and &quot;icer&quot; arrays. This function will return the index of which 32-bit register contains the enable bit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>constexpr int - array index </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="142" column="20" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="142" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a13e6ea3a6aca86620c9cf089e22985a4" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t embed::cortex_m::interrupt::irq_t::enable_mask</definition>
+        <argsstring>() const</argsstring>
+        <name>enable_mask</name>
+        <qualifiedname>embed::cortex_m::interrupt::irq_t::enable_mask</qualifiedname>
+        <briefdescription>
+<para>return a mask with a 1 bit in the enable position for this <ref refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t" kindref="compound">irq_t</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>constexpr uint32_t - enable mask </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="151" column="25" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="151" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a3d9a6215a0360e8539897c01214e9555" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t embed::cortex_m::interrupt::irq_t::vector_index</definition>
+        <argsstring>() const</argsstring>
+        <name>vector_index</name>
+        <qualifiedname>embed::cortex_m::interrupt::irq_t::vector_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>constexpr size_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="160" column="23" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="160" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a566f0cf5c1cf368e6da029c4260f9a5b" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool embed::cortex_m::interrupt::irq_t::is_valid</definition>
+        <argsstring>() const</argsstring>
+        <name>is_valid</name>
+        <qualifiedname>embed::cortex_m::interrupt::irq_t::is_valid</qualifiedname>
+        <briefdescription>
+<para>determines if the irq is within bounds of the interrupt vector table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true - is a valid interrupt for this system </para>
+</simplesect>
+<simplesect kind="return"><para>false - this interrupt is beyond the range of valid interrupts </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="171" column="21" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="171" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a19b81fd62b8e08244701ff3cd0904638" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr int</type>
+        <definition>constexpr int embed::cortex_m::interrupt::irq_t::get_irq_number</definition>
+        <argsstring>()</argsstring>
+        <name>get_irq_number</name>
+        <qualifiedname>embed::cortex_m::interrupt::irq_t::get_irq_number</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>constexpr int - the interrupt request number </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="181" column="20" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="181" bodyend="181"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>represents an interrupt request number along with helper functions for setting up the interrupt controller registers. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="80" column="3" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="81" bodyend="185"/>
+    <listofallmembers>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a636de808a58ee07ec720dd7f8cb1a73d" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::irq_t</scope><name>default_enabled</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a13e6ea3a6aca86620c9cf089e22985a4" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::irq_t</scope><name>enable_mask</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a2e681128f946eef3d98b84d6947cdb3c" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::irq_t</scope><name>enable_mask_code</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a19b81fd62b8e08244701ff3cd0904638" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::irq_t</scope><name>get_irq_number</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1ab716fe8a7fae365857780eacfcd93a5a" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::irq_t</scope><name>index_position</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a9a42c8a1e19ae81959d3e5b6a14d3c83" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::irq_t</scope><name>irq_t</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1ab18f730555987507c85107065ae09034" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::irq_t</scope><name>irq_t</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a566f0cf5c1cf368e6da029c4260f9a5b" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::irq_t</scope><name>is_valid</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a2fb43a994b1f61c7f684d63ed4194902" prot="private" virt="non-virtual"><scope>embed::cortex_m::interrupt::irq_t</scope><name>m_irq</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1ae000c8ed6617135d949735d9c9af9ef0" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::irq_t</scope><name>operator=</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a21d9e7361018571b5f34433e88c0e0fc" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::irq_t</scope><name>register_index</name></member>
+      <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a3d9a6215a0360e8539897c01214e9555" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::irq_t</scope><name>vector_index</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

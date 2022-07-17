@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t" kind="struct" language="C++" prot="public">
+    <compoundname>embed::cortex_m::dwt_counter::core_debug_registers_t</compoundname>
+    <includes refid="dwt__counter_8hpp" local="no">dwt_counter.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t_1a87fa509bc79ec590ea94dddae6947af8" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::core_debug_registers_t::dhcsr</definition>
+        <argsstring></argsstring>
+        <name>dhcsr</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::core_debug_registers_t::dhcsr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x000 (R/W) Debug Halting Control and Status Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="75" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t_1abb3b496557c4fe53c1000f0b2a63755e" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::core_debug_registers_t::dcrsr</definition>
+        <argsstring></argsstring>
+        <name>dcrsr</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::core_debug_registers_t::dcrsr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x004 ( /W) Debug Core Register Selector Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="77" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t_1a708da6703d59578c9636a00edea100c7" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::core_debug_registers_t::dcrdr</definition>
+        <argsstring></argsstring>
+        <name>dcrdr</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::core_debug_registers_t::dcrdr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x008 (R/W) Debug Core Register Data Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="79" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t_1a85840e292ce321cb3ebb91e6db6a4969" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::dwt_counter::core_debug_registers_t::demcr</definition>
+        <argsstring></argsstring>
+        <name>demcr</name>
+        <qualifiedname>embed::cortex_m::dwt_counter::core_debug_registers_t::demcr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x00C (R/W) Debug Exception and Monitor Control Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="81" column="23" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure type to access the Core Debug Register (CoreDebug) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="72" column="3" bodyfile="/github/workspace/include/libarmcortex/dwt_counter.hpp" bodystart="73" bodyend="82"/>
+    <listofallmembers>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t_1a708da6703d59578c9636a00edea100c7" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::core_debug_registers_t</scope><name>dcrdr</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t_1abb3b496557c4fe53c1000f0b2a63755e" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::core_debug_registers_t</scope><name>dcrsr</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t_1a85840e292ce321cb3ebb91e6db6a4969" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::core_debug_registers_t</scope><name>demcr</name></member>
+      <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t_1a87fa509bc79ec590ea94dddae6947af8" prot="public" virt="non-virtual"><scope>embed::cortex_m::dwt_counter::core_debug_registers_t</scope><name>dhcsr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

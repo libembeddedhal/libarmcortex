@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structembed_1_1cortex__m_1_1systick__timer_1_1control__register" kind="struct" language="C++" prot="public">
+    <compoundname>embed::cortex_m::systick_timer::control_register</compoundname>
+    <includes refid="systick__timer_8hpp" local="no">systick_timer.hpp</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1a8deeb48b0242e0e7c8ef1cf2faca1c2c" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto embed::cortex_m::systick_timer::control_register::enable_counter</definition>
+        <argsstring></argsstring>
+        <name>enable_counter</name>
+        <qualifiedname>embed::cortex_m::systick_timer::control_register::enable_counter</qualifiedname>
+        <initializer>= xstd::bitrange::from&lt;0&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When set to 1, takes the contents of the reload counter, writes it to the current_value register and begins counting down to zero. Setting this to zero stops the counter. Restarting the counter will restart the count. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="48" column="27" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1af40cf7a9bfa8297c16736d4ed9cc76d8" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto embed::cortex_m::systick_timer::control_register::enable_interrupt</definition>
+        <argsstring></argsstring>
+        <name>enable_interrupt</name>
+        <qualifiedname>embed::cortex_m::systick_timer::control_register::enable_interrupt</qualifiedname>
+        <initializer>= xstd::bitrange::from&lt;1&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When SysTick timer&apos;s count goes from 1 to 0, if this bit is set, the SysTick interrupt will fire. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="52" column="27" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1a45a3bdb78aacd52d8d89e746c75a5bca" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto embed::cortex_m::systick_timer::control_register::clock_source</definition>
+        <argsstring></argsstring>
+        <name>clock_source</name>
+        <qualifiedname>embed::cortex_m::systick_timer::control_register::clock_source</qualifiedname>
+        <initializer>= xstd::bitrange::from&lt;2&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If set to 0, clock source is external, if set to 1, clock source follows the processor clock. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="56" column="27" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1a891a8a3dcc6f2758fdfde44ca2ca5340" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto embed::cortex_m::systick_timer::control_register::count_flag</definition>
+        <argsstring></argsstring>
+        <name>count_flag</name>
+        <qualifiedname>embed::cortex_m::systick_timer::control_register::count_flag</qualifiedname>
+        <initializer>= xstd::bitrange::from&lt;16&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set to 1 when count falls from 1 to 0. This bit is cleared on the next read of this register. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="60" column="27" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Namespace containing the bitmask objects that are used to manipulate the ARM Cortex Mx SysTick Timer. </para>
+    </detaileddescription>
+    <location file="/github/workspace/include/libarmcortex/systick_timer.hpp" line="42" column="3" bodyfile="/github/workspace/include/libarmcortex/systick_timer.hpp" bodystart="43" bodyend="61"/>
+    <listofallmembers>
+      <member refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1a45a3bdb78aacd52d8d89e746c75a5bca" prot="public" virt="non-virtual"><scope>embed::cortex_m::systick_timer::control_register</scope><name>clock_source</name></member>
+      <member refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1a891a8a3dcc6f2758fdfde44ca2ca5340" prot="public" virt="non-virtual"><scope>embed::cortex_m::systick_timer::control_register</scope><name>count_flag</name></member>
+      <member refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1a8deeb48b0242e0e7c8ef1cf2faca1c2c" prot="public" virt="non-virtual"><scope>embed::cortex_m::systick_timer::control_register</scope><name>enable_counter</name></member>
+      <member refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1af40cf7a9bfa8297c16736d4ed9cc76d8" prot="public" virt="non-virtual"><scope>embed::cortex_m::systick_timer::control_register</scope><name>enable_interrupt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

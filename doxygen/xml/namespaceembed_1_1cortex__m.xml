@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="namespaceembed_1_1cortex__m" kind="namespace" language="C++">
+    <compoundname>embed::cortex_m</compoundname>
+    <innerclass refid="classembed_1_1cortex__m_1_1dwt__counter" prot="public">embed::cortex_m::dwt_counter</innerclass>
+    <innerclass refid="classembed_1_1cortex__m_1_1interrupt" prot="public">embed::cortex_m::interrupt</innerclass>
+    <innerclass refid="classembed_1_1cortex__m_1_1system__control" prot="public">embed::cortex_m::system_control</innerclass>
+    <innerclass refid="classembed_1_1cortex__m_1_1systick__timer" prot="public">embed::cortex_m::systick_timer</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="interrupt_8hpp_1aa04bcc9b261dcb4ba320a9b324ccf8e9" prot="public" static="no">
+        <type>void(*)()</type>
+        <definition>using embed::cortex_m::interrupt_pointer = typedef void (*)()</definition>
+        <argsstring></argsstring>
+        <name>interrupt_pointer</name>
+        <qualifiedname>embed::cortex_m::interrupt_pointer</qualifiedname>
+        <briefdescription>
+<para>Used specifically for defining an interrupt vector table of addresses. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="16" column="1" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="startup_8hpp_1acb4c31390ceb0c17db6c3608a04a2e15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void embed::cortex_m::initialize_data_section</definition>
+        <argsstring>()</argsstring>
+        <name>initialize_data_section</name>
+        <qualifiedname>embed::cortex_m::initialize_data_section</qualifiedname>
+        <briefdescription>
+<para>Initialize the data section of RAM. This should be the first thing called in main() before using any global or statically allocated variables. It can also be called in the startup code before main is called. This is not done by crt0.s (C runtime startup code) because with an OS, when the executable is copied to RAM, the data section is also copied and those same locations can be reused for the application, removing the need to copy the data section. This will also happen if one loads an elf file to an MCU using a debugger. Typically the RAM section, but not BSS, is copied over. But in the case of the MCU without a debugger, the MCU will have to manage coping the contents from ROM to RAM itself. Systems should always assume they haven&apos;t been loaded by any means and should set the data section at the start of the application. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/startup.hpp" line="55" column="13" bodyfile="/github/workspace/include/libarmcortex/startup.hpp" bodystart="55" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="startup_8hpp_1ab3fbee1870fdb425493c3d2bf90d357f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void embed::cortex_m::initialize_bss_section</definition>
+        <argsstring>()</argsstring>
+        <name>initialize_bss_section</name>
+        <qualifiedname>embed::cortex_m::initialize_bss_section</qualifiedname>
+        <briefdescription>
+<para>Initialize the BSS (uninitialized data section) to all zeros. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Not required if the C Runtime 0 (crt0.s/.a/.o) is used as a startup routine. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/startup.hpp" line="68" column="13" bodyfile="/github/workspace/include/libarmcortex/startup.hpp" bodystart="68" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/github/workspace/include/libarmcortex/dwt_counter.hpp" line="10" column="1"/>
+  </compounddef>
+</doxygen>

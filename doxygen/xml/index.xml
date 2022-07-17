@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.4" xml:lang="en-US">
+  <compound refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register" kind="struct"><name>embed::cortex_m::systick_timer::control_register</name>
+    <member refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1a8deeb48b0242e0e7c8ef1cf2faca1c2c" kind="variable"><name>enable_counter</name></member>
+    <member refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1af40cf7a9bfa8297c16736d4ed9cc76d8" kind="variable"><name>enable_interrupt</name></member>
+    <member refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1a45a3bdb78aacd52d8d89e746c75a5bca" kind="variable"><name>clock_source</name></member>
+    <member refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1a891a8a3dcc6f2758fdfde44ca2ca5340" kind="variable"><name>count_flag</name></member>
+  </compound>
+  <compound refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t" kind="struct"><name>embed::cortex_m::dwt_counter::core_debug_registers_t</name>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t_1a87fa509bc79ec590ea94dddae6947af8" kind="variable"><name>dhcsr</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t_1abb3b496557c4fe53c1000f0b2a63755e" kind="variable"><name>dcrsr</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t_1a708da6703d59578c9636a00edea100c7" kind="variable"><name>dcrdr</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1core__debug__registers__t_1a85840e292ce321cb3ebb91e6db6a4969" kind="variable"><name>demcr</name></member>
+  </compound>
+  <compound refid="classembed_1_1cortex__m_1_1dwt__counter" kind="class"><name>embed::cortex_m::dwt_counter</name>
+    <member refid="classembed_1_1cortex__m_1_1dwt__counter_1ac6a7f148013497387255425c5becbeb6" kind="variable"><name>core_trace_enable</name></member>
+    <member refid="classembed_1_1cortex__m_1_1dwt__counter_1a454a531ee77457d838d6082ba2d918e5" kind="variable"><name>enable_cycle_count</name></member>
+    <member refid="classembed_1_1cortex__m_1_1dwt__counter_1a95f119acdb169c00386af9373062d3ba" kind="variable"><name>dwt_address</name></member>
+    <member refid="classembed_1_1cortex__m_1_1dwt__counter_1a671345582d96853b62628de8361e2be6" kind="variable"><name>core_debug_address</name></member>
+    <member refid="classembed_1_1cortex__m_1_1dwt__counter_1a23a7ec9ba232158213c9d19772cce0db" kind="variable"><name>m_cpu_frequency</name></member>
+    <member refid="classembed_1_1cortex__m_1_1dwt__counter_1ae177355faa38348e6f18df762472c156" kind="function"><name>dwt</name></member>
+    <member refid="classembed_1_1cortex__m_1_1dwt__counter_1ad1eb94eae63f38951a8cd1e1d01ab273" kind="function"><name>core</name></member>
+    <member refid="classembed_1_1cortex__m_1_1dwt__counter_1acb5be7061261b5e23b1c7af99283df3a" kind="function"><name>dwt_counter</name></member>
+    <member refid="classembed_1_1cortex__m_1_1dwt__counter_1a05ed772d18aee690a661667ca5bdbf01" kind="function"><name>register_cpu_frequency</name></member>
+    <member refid="classembed_1_1cortex__m_1_1dwt__counter_1a05aaac083784c7aad0970a41aa5c0875" kind="function"><name>driver_uptime</name></member>
+  </compound>
+  <compound refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t" kind="struct"><name>embed::cortex_m::dwt_counter::dwt_registers_t</name>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ac4f9cc58983ade09f081fea40de81ba9" kind="variable"><name>ctrl</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a2efc837146b5bae4f37128b3950ab3d7" kind="variable"><name>cyccnt</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1aa5774d6c394811ef679b5002a4ae188a" kind="variable"><name>cpicnt</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a86e8f87c1ab1a65247603155f7a97089" kind="variable"><name>exccnt</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1afe9214fe3199fb934037e1d0eeb2ab29" kind="variable"><name>sleepcnt</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a2e97e3669f7f09c48958b29089d2e3f6" kind="variable"><name>lsucnt</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ae2160552c68cdf5d255db755b74fa75f" kind="variable"><name>foldcnt</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1aefaac4e65f53bc38af6753520ffae517" kind="variable"><name>pcsr</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a13d16fc623810d4ba99017d72370e58f" kind="variable"><name>comp0</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ad20aaca390e64b96add245307f8b6848" kind="variable"><name>mask0</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a09563e23a57f9ead3fd1ee04c94cc80d" kind="variable"><name>function0</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a9c30396c8e50acc2b28c7359e54c4dc5" kind="variable"><name>reserved0</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a6e5f7e6f8828f63d232e444d4b08430b" kind="variable"><name>comp1</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ad41753cab76868220e31242fe9f7bd3c" kind="variable"><name>mask1</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a085981461e2a037cb025615b1915efa9" kind="variable"><name>function1</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a0fbe244dd9b2c1f86cff32d22cf223fb" kind="variable"><name>reserved1</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ac8f5f83ad6d7dffa323d2479e6a52cc9" kind="variable"><name>comp2</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a84ee3e5e117dd039a85a372243bdeff3" kind="variable"><name>mask2</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1aaaafd2b85cd35c91a83ca79e059fdca9" kind="variable"><name>function2</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1aa4804e0e6eeb34b2c7ee4a4efb96f1ea" kind="variable"><name>reserved2</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1ae4bec6d13d3ee7b1a539e80ae4a9c1e0" kind="variable"><name>comp3</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a7bb6e20593cc5c668604eed79c4660a6" kind="variable"><name>mask3</name></member>
+    <member refid="structembed_1_1cortex__m_1_1dwt__counter_1_1dwt__registers__t_1a3af1b30bdb51a610c1e16b1183e8ecd7" kind="variable"><name>function3</name></member>
+  </compound>
+  <compound refid="classembed_1_1cortex__m_1_1interrupt" kind="class"><name>embed::cortex_m::interrupt</name>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1a004e94ae690d9878ad0f902b2ea30ce1" kind="variable"><name>nvic_address</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1a50c343dc9b05c5ae2ce2cd7dbed43809" kind="variable"><name>core_interrupts</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1ad04eb038f65e47f9c06e833ce80ea519" kind="variable"><name>vector_table</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1a7657fd661b1832f17022bcf57c559990" kind="variable"><name>m_irq</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1aeb4a534c7a7fb61a3530072a28e7b5fd" kind="function"><name>nvic</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1a6d1ba6aadcded48be3ed27d293d65779" kind="function"><name>nop</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1a295015f5b14cb95d7e7908e3ab18ce1f" kind="function"><name>initialize</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1a41b0b48496b94c484b017e7369a5fc51" kind="function"><name>reinitialize</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1a3e06e906d013303f1564f0e1c3605c3e" kind="function"><name>get_vector_table</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1ae9dcee8373ecb40df26c777a1074e8ca" kind="function"><name>interrupt</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1ac46bd0a4ca050a8d41c394a1080f52bb" kind="function"><name>enable</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1a2b5b1eb8840c207b941f456657a49b8e" kind="function"><name>disable</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1af79ed42515f4ae295fe2410fd8a7e46c" kind="function"><name>verify_vector_enabled</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1adbf5fbfbe82271902d4d787d029af58f" kind="function"><name>sanity_check</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1a625ad6a2d7beef468bc930f15ca2f30e" kind="function"><name>vector_table_is_initialized</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1a5373439f47aaacf2b1bfddf4d9a29f78" kind="function"><name>nvic_enable_irq</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1abf0fe3f3b60a03aa523bc8e51f08f86e" kind="function"><name>nvic_disable_irq</name></member>
+  </compound>
+  <compound refid="structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq" kind="struct"><name>embed::cortex_m::interrupt::invalid_irq</name>
+    <member refid="structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq_1a63fe1219b0c3b9f6eaa2bfbc4b61ab2a" kind="variable"><name>begin</name></member>
+    <member refid="structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq_1a0da5c8e1c32aa08bb8841f7e912eba47" kind="variable"><name>invalid</name></member>
+    <member refid="structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq_1ae74e0c9710c1a8c5011fb2c84eff94fc" kind="variable"><name>end</name></member>
+    <member refid="structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq_1a009955585de9474c648a40e7cbc2830e" kind="function"><name>invalid_irq</name></member>
+  </compound>
+  <compound refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t" kind="class"><name>embed::cortex_m::interrupt::irq_t</name>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1ab716fe8a7fae365857780eacfcd93a5a" kind="variable"><name>index_position</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a2e681128f946eef3d98b84d6947cdb3c" kind="variable"><name>enable_mask_code</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a2fb43a994b1f61c7f684d63ed4194902" kind="variable"><name>m_irq</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a9a42c8a1e19ae81959d3e5b6a14d3c83" kind="function"><name>irq_t</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1ab18f730555987507c85107065ae09034" kind="function"><name>irq_t</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1ae000c8ed6617135d949735d9c9af9ef0" kind="function"><name>operator=</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a636de808a58ee07ec720dd7f8cb1a73d" kind="function"><name>default_enabled</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a21d9e7361018571b5f34433e88c0e0fc" kind="function"><name>register_index</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a13e6ea3a6aca86620c9cf089e22985a4" kind="function"><name>enable_mask</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a3d9a6215a0360e8539897c01214e9555" kind="function"><name>vector_index</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a566f0cf5c1cf368e6da029c4260f9a5b" kind="function"><name>is_valid</name></member>
+    <member refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t_1a19b81fd62b8e08244701ff3cd0904638" kind="function"><name>get_irq_number</name></member>
+  </compound>
+  <compound refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t" kind="struct"><name>embed::cortex_m::interrupt::nvic_register_t</name>
+    <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1aee289569bf71d845ac677b8fd531b7eb" kind="variable"><name>iser</name></member>
+    <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a833140ef514a471a404a8d9d9daa0e91" kind="variable"><name>reserved0</name></member>
+    <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1aa5a5f8e248040065cec04189ce455ed9" kind="variable"><name>icer</name></member>
+    <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a9128b9073a97a7dc7be43fdb1b2978fd" kind="variable"><name>reserved1</name></member>
+    <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a06ee422b5f7e41eeeb7a1ff8a3cecc29" kind="variable"><name>ispr</name></member>
+    <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a4684852d23b22aafa23a75693872237f" kind="variable"><name>reserved2</name></member>
+    <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a6fff278bd8b29d4f570dd7c22d3c3fd7" kind="variable"><name>icpr</name></member>
+    <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1adb460b8f957f6673eff570c762e245ef" kind="variable"><name>reserved3</name></member>
+    <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a620b3034752af6778cdac02dc5b82af8" kind="variable"><name>iabr</name></member>
+    <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a3101beed3b6e9310363c1e5de8c38287" kind="variable"><name>reserved4</name></member>
+    <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1ac106786641f02e945eb9f981811f0444" kind="variable"><name>ip</name></member>
+    <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a43bcd6665a16a576a3af233762287890" kind="variable"><name>reserved5</name></member>
+    <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a69d3eed848e74aaa1664b382ec2244c9" kind="variable"><name>stir</name></member>
+  </compound>
+  <compound refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers" kind="struct"><name>embed::cortex_m::systick_timer::registers</name>
+    <member refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers_1aebbb96490c1cba6e7319770aa365295f" kind="variable"><name>control</name></member>
+    <member refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers_1ae136cd609f43f944efd6e728c7d7e716" kind="variable"><name>reload</name></member>
+    <member refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers_1a42e3fc4837dc413a967f9784cbf68422" kind="variable"><name>current_value</name></member>
+    <member refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers_1a7647db27b95c3a4bec7f12f7d450b87f" kind="variable"><name>calib</name></member>
+  </compound>
+  <compound refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t" kind="struct"><name>embed::cortex_m::system_control::scb_registers_t</name>
+    <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1abb36782967ff1eefa1338460e3f35791" kind="variable"><name>cpuid</name></member>
+    <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a0e85f97dbc6c6b9d624c7239801e13cf" kind="variable"><name>icsr</name></member>
+    <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1aa92ddf010c733000fca186329fe18c94" kind="variable"><name>vtor</name></member>
+    <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a256079b738e00bfa25137114c9f6ad73" kind="variable"><name>aircr</name></member>
+    <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1af84f214f4ba4710d4fb5c1ec2bff670b" kind="variable"><name>scr</name></member>
+    <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a6f0c9372403396c3f8c0c1dfba527932" kind="variable"><name>ccr</name></member>
+    <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1add246ee559bbe3b0b2b4ec7b6cbb60cd" kind="variable"><name>shp</name></member>
+    <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a9cd9416fdcd99a3ea425326dcccb2544" kind="variable"><name>shcsr</name></member>
+    <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a14daa81a54b958e26aee06826e66a6ec" kind="variable"><name>cfsr</name></member>
+    <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a681dc64defc325a874b97ffd6e9606a6" kind="variable"><name>hfsr</name></member>
+    <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a4ea127da48a3148c0ad39b1529302bbc" kind="variable"><name>dfsr</name></member>
+    <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a5ad13b6b83da21f6310eba8eeac933cb" kind="variable"><name>mmfar</name></member>
+    <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a19fb7cb4de0219319614a311061d863c" kind="variable"><name>bfar</name></member>
+    <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a5533302d0b6ce45f96a0d2f2cb0d61e9" kind="variable"><name>afsr</name></member>
+    <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1ac61b1942f0b09b00ede865b45864139f" kind="variable"><name>pfr</name></member>
+    <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a8ec8cc61e8d82f662d653b0de241a35b" kind="variable"><name>dfr</name></member>
+    <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a37be597712bd313f64cd6ea17ed2b027" kind="variable"><name>adr</name></member>
+    <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1af5c26f7d05b4bc7d7e7303158d5b6cc3" kind="variable"><name>mmfr</name></member>
+    <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a07d66193d30205cfe6d8a5e3e7687686" kind="variable"><name>isar</name></member>
+    <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1aa01026c45b73a0ccebcf22398b97a9eb" kind="variable"><name>reserved0</name></member>
+    <member refid="structembed_1_1cortex__m_1_1system__control_1_1scb__registers__t_1a8cd8ad73da97eec2f0dc6c444a56732e" kind="variable"><name>cpacr</name></member>
+  </compound>
+  <compound refid="classembed_1_1cortex__m_1_1system__control" kind="class"><name>embed::cortex_m::system_control</name>
+    <member refid="classembed_1_1cortex__m_1_1system__control_1a10225a8f0d3ee88bd40c094e40e0f52c" kind="variable"><name>scb_address</name></member>
+    <member refid="classembed_1_1cortex__m_1_1system__control_1afdee24068c81f3c4b47849ae7f8db67b" kind="function"><name>scb</name></member>
+    <member refid="classembed_1_1cortex__m_1_1system__control_1aa3a8ac3d0826d7aabfb8114912579ec3" kind="function"><name>initialize_floating_point_unit</name></member>
+    <member refid="classembed_1_1cortex__m_1_1system__control_1a398a6b79a1b5d8e53d48ad9dd6f86fe8" kind="function"><name>set_interrupt_vector_table_address</name></member>
+    <member refid="classembed_1_1cortex__m_1_1system__control_1aa7e8c25387eb7bdb30438dcf3729346e" kind="function"><name>get_interrupt_vector_table_address</name></member>
+  </compound>
+  <compound refid="classembed_1_1cortex__m_1_1systick__timer" kind="class"><name>embed::cortex_m::systick_timer</name>
+    <member refid="classembed_1_1cortex__m_1_1systick__timer_1af3e90c03275d038bd0e6deb5a5a05cfc" kind="enum"><name>clock_source</name></member>
+    <member refid="classembed_1_1cortex__m_1_1systick__timer_1af3e90c03275d038bd0e6deb5a5a05cfca6a21b6995a068148bbb65c8f949b3fb2" kind="enumvalue"><name>external</name></member>
+    <member refid="classembed_1_1cortex__m_1_1systick__timer_1af3e90c03275d038bd0e6deb5a5a05cfca649ce0650379a0aaff63c1ce257350de" kind="enumvalue"><name>processor</name></member>
+    <member refid="classembed_1_1cortex__m_1_1systick__timer_1a41c6e617bd2dea7e55888554f24ea204" kind="variable"><name>address</name></member>
+    <member refid="classembed_1_1cortex__m_1_1systick__timer_1a1a4162befef6bd620fb5f100476d6be8" kind="variable"><name>irq</name></member>
+    <member refid="classembed_1_1cortex__m_1_1systick__timer_1a84cb713512e3bbfefe91bd310d4d6013" kind="variable"><name>m_frequency</name></member>
+    <member refid="classembed_1_1cortex__m_1_1systick__timer_1a722def62c9007ebcce7217bdaa2dc3fe" kind="function"><name>sys_tick</name></member>
+    <member refid="classembed_1_1cortex__m_1_1systick__timer_1ac669554c16f774ac6edfb4d090d5298b" kind="function"><name>systick_timer</name></member>
+    <member refid="classembed_1_1cortex__m_1_1systick__timer_1afaaf355185db02ebc16e23dd5700879b" kind="function"><name>register_cpu_frequency</name></member>
+    <member refid="classembed_1_1cortex__m_1_1systick__timer_1a821ca33257c20508151b8e700c677e44" kind="function"><name>~systick_timer</name></member>
+    <member refid="classembed_1_1cortex__m_1_1systick__timer_1af7653f71c8e9e0c335efd4c9109cd6ab" kind="function"><name>start</name></member>
+    <member refid="classembed_1_1cortex__m_1_1systick__timer_1a924cd2178997535c0cc160e813aab9d8" kind="function"><name>stop</name></member>
+    <member refid="classembed_1_1cortex__m_1_1systick__timer_1a1874cfcc729b1f6a595c96b9d361f79c" kind="function"><name>driver_is_running</name></member>
+    <member refid="classembed_1_1cortex__m_1_1systick__timer_1a7985f9a8b26895727c65fde3c441120d" kind="function"><name>driver_clear</name></member>
+    <member refid="classembed_1_1cortex__m_1_1systick__timer_1a4dcfe3e3cafb6ff69d7f26a225a54e3c" kind="function"><name>driver_schedule</name></member>
+  </compound>
+  <compound refid="structembed_1_1cortex__m_1_1interrupt_1_1vector__table__not__initialized" kind="struct"><name>embed::cortex_m::interrupt::vector_table_not_initialized</name>
+  </compound>
+  <compound refid="namespaceembed" kind="namespace"><name>embed</name>
+  </compound>
+  <compound refid="namespaceembed_1_1cortex__m" kind="namespace"><name>embed::cortex_m</name>
+    <member refid="interrupt_8hpp_1aa04bcc9b261dcb4ba320a9b324ccf8e9" kind="typedef"><name>interrupt_pointer</name></member>
+    <member refid="startup_8hpp_1acb4c31390ceb0c17db6c3608a04a2e15" kind="function"><name>initialize_data_section</name></member>
+    <member refid="startup_8hpp_1ab3fbee1870fdb425493c3d2bf90d357f" kind="function"><name>initialize_bss_section</name></member>
+  </compound>
+  <compound refid="dwt__counter_8hpp" kind="file"><name>dwt_counter.hpp</name>
+  </compound>
+  <compound refid="interrupt_8hpp" kind="file"><name>interrupt.hpp</name>
+  </compound>
+  <compound refid="startup_8hpp" kind="file"><name>startup.hpp</name>
+    <member refid="startup_8hpp_1af4bc07887672145e5b08984970e47257" kind="variable"><name>__data_start</name></member>
+    <member refid="startup_8hpp_1a9dbdae52e1f60bac649347621fb108ee" kind="variable"><name>__data_source</name></member>
+    <member refid="startup_8hpp_1acf959a9ccfe5ca5681d5c9ce6f7d2055" kind="variable"><name>__data_size</name></member>
+    <member refid="startup_8hpp_1af213076a56bd1666772f7e3a2e340c03" kind="variable"><name>__bss_start</name></member>
+    <member refid="startup_8hpp_1aae01eee6536b4531505b051c40bceaa1" kind="variable"><name>__bss_size</name></member>
+  </compound>
+  <compound refid="system__control_8hpp" kind="file"><name>system_control.hpp</name>
+  </compound>
+  <compound refid="systick__timer_8hpp" kind="file"><name>systick_timer.hpp</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/github/workspace/include</name>
+  </compound>
+  <compound refid="dir_60e4db51e58a07903dbed9104cd84a5b" kind="dir"><name>/github/workspace/include/libarmcortex</name>
+  </compound>
+</doxygenindex>

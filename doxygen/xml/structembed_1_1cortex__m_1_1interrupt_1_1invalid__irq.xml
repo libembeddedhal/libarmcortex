@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq" kind="struct" language="C++" prot="public">
+    <compoundname>embed::cortex_m::interrupt::invalid_irq</compoundname>
+    <includes refid="interrupt_8hpp" local="no">interrupt.hpp</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq_1a63fe1219b0c3b9f6eaa2bfbc4b61ab2a" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int embed::cortex_m::interrupt::invalid_irq::begin</definition>
+        <argsstring></argsstring>
+        <name>begin</name>
+        <qualifiedname>embed::cortex_m::interrupt::invalid_irq::begin</qualifiedname>
+        <initializer>= -<ref refid="classembed_1_1cortex__m_1_1interrupt_1a50c343dc9b05c5ae2ce2cd7dbed43809" kindref="member">core_interrupts</ref></initializer>
+        <briefdescription>
+<para>Beginning IRQ (always -16) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="212" column="26" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq_1a0da5c8e1c32aa08bb8841f7e912eba47" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int embed::cortex_m::interrupt::invalid_irq::invalid</definition>
+        <argsstring></argsstring>
+        <name>invalid</name>
+        <qualifiedname>embed::cortex_m::interrupt::invalid_irq::invalid</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Offending IRQ number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="229" column="9" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq_1ae74e0c9710c1a8c5011fb2c84eff94fc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int embed::cortex_m::interrupt::invalid_irq::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <qualifiedname>embed::cortex_m::interrupt::invalid_irq::end</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>The last IRQ in the table. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="231" column="9" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq_1a009955585de9474c648a40e7cbc2830e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>embed::cortex_m::interrupt::invalid_irq::invalid_irq</definition>
+        <argsstring>(irq_t p_irq)</argsstring>
+        <name>invalid_irq</name>
+        <qualifiedname>embed::cortex_m::interrupt::invalid_irq::invalid_irq</qualifiedname>
+        <param>
+          <type><ref refid="classembed_1_1cortex__m_1_1interrupt_1_1irq__t" kindref="compound">irq_t</ref></type>
+          <declname>p_irq</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new invalid irq object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_irq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the offending IRQ number </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="219" column="5" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="219" bodyend="226"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An error indicating that an invalid IRQ has been passed to the interrupt class which is outside of the bounds of the interrupt vector table. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This sort of error is not usually recoverable and indicates an error in a driver. </para>
+    </detaileddescription>
+    <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="209" column="3" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="210" bodyend="232"/>
+    <listofallmembers>
+      <member refid="structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq_1a63fe1219b0c3b9f6eaa2bfbc4b61ab2a" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::invalid_irq</scope><name>begin</name></member>
+      <member refid="structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq_1ae74e0c9710c1a8c5011fb2c84eff94fc" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::invalid_irq</scope><name>end</name></member>
+      <member refid="structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq_1a0da5c8e1c32aa08bb8841f7e912eba47" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::invalid_irq</scope><name>invalid</name></member>
+      <member refid="structembed_1_1cortex__m_1_1interrupt_1_1invalid__irq_1a009955585de9474c648a40e7cbc2830e" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::invalid_irq</scope><name>invalid_irq</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

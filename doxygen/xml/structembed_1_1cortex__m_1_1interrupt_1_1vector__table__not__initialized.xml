@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structembed_1_1cortex__m_1_1interrupt_1_1vector__table__not__initialized" kind="struct" language="C++" prot="public">
+    <compoundname>embed::cortex_m::interrupt::vector_table_not_initialized</compoundname>
+    <includes refid="interrupt_8hpp" local="no">interrupt.hpp</includes>
+    <briefdescription>
+<para>Error indicating that the interrupt vector table is not initialized. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This error usually indicates that there is a bug in a driver or application because it did not initialize the vector table near the start of the application.</para>
+<para>But this could also be used to signal to run <ref refid="classembed_1_1cortex__m_1_1interrupt_1a295015f5b14cb95d7e7908e3ab18ce1f" kindref="member">interrupt::initialize()</ref> </para>
+    </detaileddescription>
+    <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="197" column="3" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="198" bodyend="198"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

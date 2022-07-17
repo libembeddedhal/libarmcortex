@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t" kind="struct" language="C++" prot="public">
+    <compoundname>embed::cortex_m::interrupt::nvic_register_t</compoundname>
+    <includes refid="interrupt_8hpp" local="no">interrupt.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1aee289569bf71d845ac677b8fd531b7eb" prot="public" static="no" mutable="no">
+        <type>std::array&lt; volatile uint32_t, 8U &gt;</type>
+        <definition>std::array&lt;volatile uint32_t, 8U&gt; embed::cortex_m::interrupt::nvic_register_t::iser</definition>
+        <argsstring></argsstring>
+        <name>iser</name>
+        <qualifiedname>embed::cortex_m::interrupt::nvic_register_t::iser</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x000 (R/W) Interrupt Set Enable Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="29" column="16" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a833140ef514a471a404a8d9d9daa0e91" prot="public" static="no" mutable="no">
+        <type>std::array&lt; uint32_t, 24U &gt;</type>
+        <definition>std::array&lt;uint32_t, 24U&gt; embed::cortex_m::interrupt::nvic_register_t::reserved0</definition>
+        <argsstring></argsstring>
+        <name>reserved0</name>
+        <qualifiedname>embed::cortex_m::interrupt::nvic_register_t::reserved0</qualifiedname>
+        <briefdescription>
+<para>Reserved 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="31" column="16" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1aa5a5f8e248040065cec04189ce455ed9" prot="public" static="no" mutable="no">
+        <type>std::array&lt; volatile uint32_t, 8U &gt;</type>
+        <definition>std::array&lt;volatile uint32_t, 8U&gt; embed::cortex_m::interrupt::nvic_register_t::icer</definition>
+        <argsstring></argsstring>
+        <name>icer</name>
+        <qualifiedname>embed::cortex_m::interrupt::nvic_register_t::icer</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x080 (R/W) Interrupt Clear Enable Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="33" column="16" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a9128b9073a97a7dc7be43fdb1b2978fd" prot="public" static="no" mutable="no">
+        <type>std::array&lt; uint32_t, 24U &gt;</type>
+        <definition>std::array&lt;uint32_t, 24U&gt; embed::cortex_m::interrupt::nvic_register_t::reserved1</definition>
+        <argsstring></argsstring>
+        <name>reserved1</name>
+        <qualifiedname>embed::cortex_m::interrupt::nvic_register_t::reserved1</qualifiedname>
+        <briefdescription>
+<para>Reserved 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="35" column="16" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a06ee422b5f7e41eeeb7a1ff8a3cecc29" prot="public" static="no" mutable="no">
+        <type>std::array&lt; volatile uint32_t, 8U &gt;</type>
+        <definition>std::array&lt;volatile uint32_t, 8U&gt; embed::cortex_m::interrupt::nvic_register_t::ispr</definition>
+        <argsstring></argsstring>
+        <name>ispr</name>
+        <qualifiedname>embed::cortex_m::interrupt::nvic_register_t::ispr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x100 (R/W) Interrupt Set Pending Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="37" column="16" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a4684852d23b22aafa23a75693872237f" prot="public" static="no" mutable="no">
+        <type>std::array&lt; uint32_t, 24U &gt;</type>
+        <definition>std::array&lt;uint32_t, 24U&gt; embed::cortex_m::interrupt::nvic_register_t::reserved2</definition>
+        <argsstring></argsstring>
+        <name>reserved2</name>
+        <qualifiedname>embed::cortex_m::interrupt::nvic_register_t::reserved2</qualifiedname>
+        <briefdescription>
+<para>Reserved 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="39" column="16" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a6fff278bd8b29d4f570dd7c22d3c3fd7" prot="public" static="no" mutable="no">
+        <type>std::array&lt; volatile uint32_t, 8U &gt;</type>
+        <definition>std::array&lt;volatile uint32_t, 8U&gt; embed::cortex_m::interrupt::nvic_register_t::icpr</definition>
+        <argsstring></argsstring>
+        <name>icpr</name>
+        <qualifiedname>embed::cortex_m::interrupt::nvic_register_t::icpr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x180 (R/W) Interrupt Clear Pending Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="41" column="16" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1adb460b8f957f6673eff570c762e245ef" prot="public" static="no" mutable="no">
+        <type>std::array&lt; uint32_t, 24U &gt;</type>
+        <definition>std::array&lt;uint32_t, 24U&gt; embed::cortex_m::interrupt::nvic_register_t::reserved3</definition>
+        <argsstring></argsstring>
+        <name>reserved3</name>
+        <qualifiedname>embed::cortex_m::interrupt::nvic_register_t::reserved3</qualifiedname>
+        <briefdescription>
+<para>Reserved 3. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="43" column="16" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a620b3034752af6778cdac02dc5b82af8" prot="public" static="no" mutable="no">
+        <type>std::array&lt; volatile uint32_t, 8U &gt;</type>
+        <definition>std::array&lt;volatile uint32_t, 8U&gt; embed::cortex_m::interrupt::nvic_register_t::iabr</definition>
+        <argsstring></argsstring>
+        <name>iabr</name>
+        <qualifiedname>embed::cortex_m::interrupt::nvic_register_t::iabr</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x200 (R/W) Interrupt Active bit Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="45" column="16" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a3101beed3b6e9310363c1e5de8c38287" prot="public" static="no" mutable="no">
+        <type>std::array&lt; uint32_t, 56U &gt;</type>
+        <definition>std::array&lt;uint32_t, 56U&gt; embed::cortex_m::interrupt::nvic_register_t::reserved4</definition>
+        <argsstring></argsstring>
+        <name>reserved4</name>
+        <qualifiedname>embed::cortex_m::interrupt::nvic_register_t::reserved4</qualifiedname>
+        <briefdescription>
+<para>Reserved 4. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="47" column="16" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1ac106786641f02e945eb9f981811f0444" prot="public" static="no" mutable="no">
+        <type>std::array&lt; volatile uint8_t, 240U &gt;</type>
+        <definition>std::array&lt;volatile uint8_t, 240U&gt; embed::cortex_m::interrupt::nvic_register_t::ip</definition>
+        <argsstring></argsstring>
+        <name>ip</name>
+        <qualifiedname>embed::cortex_m::interrupt::nvic_register_t::ip</qualifiedname>
+        <briefdescription>
+<para>Offset: 0x300 (R/W) Interrupt Priority Register (8Bit wide) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="49" column="16" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a43bcd6665a16a576a3af233762287890" prot="public" static="no" mutable="no">
+        <type>std::array&lt; uint32_t, 644U &gt;</type>
+        <definition>std::array&lt;uint32_t, 644U&gt; embed::cortex_m::interrupt::nvic_register_t::reserved5</definition>
+        <argsstring></argsstring>
+        <name>reserved5</name>
+        <qualifiedname>embed::cortex_m::interrupt::nvic_register_t::reserved5</qualifiedname>
+        <briefdescription>
+<para>Reserved 5. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="51" column="16" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a69d3eed848e74aaa1664b382ec2244c9" prot="public" static="no" mutable="no">
+        <type>volatile uint32_t</type>
+        <definition>volatile uint32_t embed::cortex_m::interrupt::nvic_register_t::stir</definition>
+        <argsstring></argsstring>
+        <name>stir</name>
+        <qualifiedname>embed::cortex_m::interrupt::nvic_register_t::stir</qualifiedname>
+        <briefdescription>
+<para>Offset: 0xE00 ( /W) Software Trigger Interrupt Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="53" column="23" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure type to access the Nested Vectored Interrupt Controller (NVIC) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/github/workspace/include/libarmcortex/interrupt.hpp" line="26" column="3" bodyfile="/github/workspace/include/libarmcortex/interrupt.hpp" bodystart="27" bodyend="54"/>
+    <listofallmembers>
+      <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a620b3034752af6778cdac02dc5b82af8" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::nvic_register_t</scope><name>iabr</name></member>
+      <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1aa5a5f8e248040065cec04189ce455ed9" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::nvic_register_t</scope><name>icer</name></member>
+      <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a6fff278bd8b29d4f570dd7c22d3c3fd7" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::nvic_register_t</scope><name>icpr</name></member>
+      <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1ac106786641f02e945eb9f981811f0444" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::nvic_register_t</scope><name>ip</name></member>
+      <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1aee289569bf71d845ac677b8fd531b7eb" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::nvic_register_t</scope><name>iser</name></member>
+      <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a06ee422b5f7e41eeeb7a1ff8a3cecc29" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::nvic_register_t</scope><name>ispr</name></member>
+      <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a833140ef514a471a404a8d9d9daa0e91" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::nvic_register_t</scope><name>reserved0</name></member>
+      <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a9128b9073a97a7dc7be43fdb1b2978fd" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::nvic_register_t</scope><name>reserved1</name></member>
+      <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a4684852d23b22aafa23a75693872237f" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::nvic_register_t</scope><name>reserved2</name></member>
+      <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1adb460b8f957f6673eff570c762e245ef" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::nvic_register_t</scope><name>reserved3</name></member>
+      <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a3101beed3b6e9310363c1e5de8c38287" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::nvic_register_t</scope><name>reserved4</name></member>
+      <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a43bcd6665a16a576a3af233762287890" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::nvic_register_t</scope><name>reserved5</name></member>
+      <member refid="structembed_1_1cortex__m_1_1interrupt_1_1nvic__register__t_1a69d3eed848e74aaa1664b382ec2244c9" prot="public" virt="non-virtual"><scope>embed::cortex_m::interrupt::nvic_register_t</scope><name>stir</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

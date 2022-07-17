@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="systick__timer_8hpp" kind="file" language="C++">
+    <compoundname>systick_timer.hpp</compoundname>
+    <includes local="no">cstdint</includes>
+    <includes local="no">functional</includes>
+    <includes refid="interrupt_8hpp" local="yes">interrupt.hpp</includes>
+    <includes local="no">libembeddedhal/config.hpp</includes>
+    <includes local="no">libembeddedhal/frequency.hpp</includes>
+    <includes local="no">libembeddedhal/static_callable.hpp</includes>
+    <includes local="no">libembeddedhal/timer/interface.hpp</includes>
+    <includes local="no">libxbitset/bitset.hpp</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>interrupt.hpp</label>
+        <link refid="interrupt_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>system_control.hpp</label>
+        <link refid="system__control_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/github/workspace/include/libarmcortex/systick_timer.hpp</label>
+        <link refid="systick__timer_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>algorithm</label>
+      </node>
+      <node id="6">
+        <label>array</label>
+      </node>
+      <node id="2">
+        <label>cstdint</label>
+      </node>
+      <node id="3">
+        <label>functional</label>
+      </node>
+      <node id="9">
+        <label>libembeddedhal/config.hpp</label>
+      </node>
+      <node id="10">
+        <label>libembeddedhal/error.hpp</label>
+      </node>
+      <node id="12">
+        <label>libembeddedhal/frequency.hpp</label>
+      </node>
+      <node id="13">
+        <label>libembeddedhal/static_callable.hpp</label>
+      </node>
+      <node id="14">
+        <label>libembeddedhal/timer/interface.hpp</label>
+      </node>
+      <node id="15">
+        <label>libxbitset/bitset.hpp</label>
+      </node>
+      <node id="7">
+        <label>span</label>
+      </node>
+      <node id="8">
+        <label>utility</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classembed_1_1cortex__m_1_1systick__timer" prot="public">embed::cortex_m::systick_timer</innerclass>
+    <innerclass refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers" prot="public">embed::cortex_m::systick_timer::registers</innerclass>
+    <innerclass refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register" prot="public">embed::cortex_m::systick_timer::control_register</innerclass>
+    <innernamespace refid="namespaceembed">embed</innernamespace>
+    <innernamespace refid="namespaceembed_1_1cortex__m">embed::cortex_m</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;interrupt.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libembeddedhal/config.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libembeddedhal/frequency.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libembeddedhal/static_callable.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libembeddedhal/timer/interface.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libxbitset/bitset.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">embed::cortex_m<sp/>{</highlight></codeline>
+<codeline lineno="22" refid="classembed_1_1cortex__m_1_1systick__timer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classembed_1_1cortex__m_1_1systick__timer" kindref="compound">systick_timer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>embed::timer</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26" refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers" kindref="compound">registers</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29" refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers_1aebbb96490c1cba6e7319770aa365295f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers_1aebbb96490c1cba6e7319770aa365295f" kindref="member">control</ref>;</highlight></codeline>
+<codeline lineno="31" refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers_1ae136cd609f43f944efd6e728c7d7e716" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers_1ae136cd609f43f944efd6e728c7d7e716" kindref="member">reload</ref>;</highlight></codeline>
+<codeline lineno="35" refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers_1a42e3fc4837dc413a967f9784cbf68422" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers_1a42e3fc4837dc413a967f9784cbf68422" kindref="member">current_value</ref>;</highlight></codeline>
+<codeline lineno="37" refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers_1a7647db27b95c3a4bec7f12f7d450b87f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers_1a7647db27b95c3a4bec7f12f7d450b87f" kindref="member">calib</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register" kindref="compound">control_register</ref></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48" refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1a8deeb48b0242e0e7c8ef1cf2faca1c2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1a8deeb48b0242e0e7c8ef1cf2faca1c2c" kindref="member">enable_counter</ref><sp/>=<sp/>xstd::bitrange::from&lt;0&gt;();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1af40cf7a9bfa8297c16736d4ed9cc76d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1af40cf7a9bfa8297c16736d4ed9cc76d8" kindref="member">enable_interrupt</ref><sp/>=<sp/>xstd::bitrange::from&lt;1&gt;();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1a45a3bdb78aacd52d8d89e746c75a5bca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="classembed_1_1cortex__m_1_1systick__timer_1af3e90c03275d038bd0e6deb5a5a05cfc" kindref="member">clock_source</ref><sp/>=<sp/>xstd::bitrange::from&lt;2&gt;();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1a891a8a3dcc6f2758fdfde44ca2ca5340" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1a891a8a3dcc6f2758fdfde44ca2ca5340" kindref="member">count_flag</ref><sp/>=<sp/>xstd::bitrange::from&lt;16&gt;();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="classembed_1_1cortex__m_1_1systick__timer_1af3e90c03275d038bd0e6deb5a5a05cfc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classembed_1_1cortex__m_1_1systick__timer_1af3e90c03275d038bd0e6deb5a5a05cfc" kindref="member">clock_source</ref></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>external<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>processor<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="classembed_1_1cortex__m_1_1systick__timer_1a41c6e617bd2dea7e55888554f24ea204" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>intptr_t<sp/><ref refid="classembed_1_1cortex__m_1_1systick__timer_1a41c6e617bd2dea7e55888554f24ea204" kindref="member">address</ref><sp/>=<sp/>0xE000&apos;E010UL;</highlight></codeline>
+<codeline lineno="79" refid="classembed_1_1cortex__m_1_1systick__timer_1a1a4162befef6bd620fb5f100476d6be8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classembed_1_1cortex__m_1_1systick__timer_1a1a4162befef6bd620fb5f100476d6be8" kindref="member">irq</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="classembed_1_1cortex__m_1_1systick__timer_1a722def62c9007ebcce7217bdaa2dc3fe" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/><ref refid="classembed_1_1cortex__m_1_1systick__timer_1a722def62c9007ebcce7217bdaa2dc3fe" kindref="member">sys_tick</ref>()</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>(embed::is_a_test())<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers" kindref="compound">registers</ref><sp/>dummy_sys_tick{};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;dummy_sys_tick;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><ref refid="structembed_1_1cortex__m_1_1systick__timer_1_1registers" kindref="compound">registers</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classembed_1_1cortex__m_1_1systick__timer_1a41c6e617bd2dea7e55888554f24ea204" kindref="member">address</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="classembed_1_1cortex__m_1_1systick__timer_1ac669554c16f774ac6edfb4d090d5298b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classembed_1_1cortex__m_1_1systick__timer_1ac669554c16f774ac6edfb4d090d5298b" kindref="member">systick_timer</ref>(frequency<sp/>p_frequency,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classembed_1_1cortex__m_1_1systick__timer_1af3e90c03275d038bd0e6deb5a5a05cfc" kindref="member">clock_source</ref><sp/>p_source<sp/>=<sp/><ref refid="classembed_1_1cortex__m_1_1systick__timer_1af3e90c03275d038bd0e6deb5a5a05cfca649ce0650379a0aaff63c1ce257350de" kindref="member">clock_source::processor</ref>)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>m_frequency(p_frequency)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classembed_1_1cortex__m_1_1systick__timer_1afaaf355185db02ebc16e23dd5700879b" kindref="member">register_cpu_frequency</ref>(p_frequency,<sp/>p_source);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="classembed_1_1cortex__m_1_1systick__timer_1afaaf355185db02ebc16e23dd5700879b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classembed_1_1cortex__m_1_1systick__timer_1afaaf355185db02ebc16e23dd5700879b" kindref="member">register_cpu_frequency</ref>(frequency<sp/>p_frequency,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classembed_1_1cortex__m_1_1systick__timer_1af3e90c03275d038bd0e6deb5a5a05cfc" kindref="member">clock_source</ref><sp/>p_source<sp/>=<sp/><ref refid="classembed_1_1cortex__m_1_1systick__timer_1af3e90c03275d038bd0e6deb5a5a05cfca649ce0650379a0aaff63c1ce257350de" kindref="member">clock_source::processor</ref>)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>stop();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>m_frequency<sp/>=<sp/>p_frequency;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Since<sp/>reloads<sp/>only<sp/>occur<sp/>when<sp/>the<sp/>current_value<sp/>falls<sp/>from<sp/>1<sp/>to<sp/>0,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>setting<sp/>this<sp/>register<sp/>directly<sp/>to<sp/>zero<sp/>from<sp/>any<sp/>other<sp/>number<sp/>will<sp/>disable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>reloading<sp/>of<sp/>the<sp/>register<sp/>and<sp/>will<sp/>stop<sp/>the<sp/>timer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classembed_1_1cortex__m_1_1systick__timer_1a722def62c9007ebcce7217bdaa2dc3fe" kindref="member">sys_tick</ref>()-&gt;current_value<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>control<sp/>=<sp/>xstd::bitmanip(<ref refid="classembed_1_1cortex__m_1_1systick__timer_1a722def62c9007ebcce7217bdaa2dc3fe" kindref="member">sys_tick</ref>()-&gt;control);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>control.set(<ref refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1af40cf7a9bfa8297c16736d4ed9cc76d8" kindref="member">control_register::enable_interrupt</ref>);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p_source<sp/>==<sp/><ref refid="classembed_1_1cortex__m_1_1systick__timer_1af3e90c03275d038bd0e6deb5a5a05cfca649ce0650379a0aaff63c1ce257350de" kindref="member">clock_source::processor</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>control.set(<ref refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1a45a3bdb78aacd52d8d89e746c75a5bca" kindref="member">control_register::clock_source</ref>);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>control.reset(<ref refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1a45a3bdb78aacd52d8d89e746c75a5bca" kindref="member">control_register::clock_source</ref>);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Disable<sp/>the<sp/>counter<sp/>if<sp/>it<sp/>was<sp/>previously<sp/>enabled.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>control.reset(<ref refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1a8deeb48b0242e0e7c8ef1cf2faca1c2c" kindref="member">control_register::enable_counter</ref>);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>control<sp/>will<sp/>be<sp/>committed<sp/>to<sp/>&quot;sys_tick()-&gt;control&quot;<sp/>on<sp/>destruction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="classembed_1_1cortex__m_1_1systick__timer_1a821ca33257c20508151b8e700c677e44" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classembed_1_1cortex__m_1_1systick__timer_1a821ca33257c20508151b8e700c677e44" kindref="member">~systick_timer</ref>()</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>stop();</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classembed_1_1cortex__m_1_1interrupt" kindref="compound">cortex_m::interrupt</ref>(<ref refid="classembed_1_1cortex__m_1_1systick__timer_1a1a4162befef6bd620fb5f100476d6be8" kindref="member">irq</ref>).disable())<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::abort();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>start()</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>xstd::bitmanip(<ref refid="classembed_1_1cortex__m_1_1systick__timer_1a722def62c9007ebcce7217bdaa2dc3fe" kindref="member">sys_tick</ref>()-&gt;control).set(<ref refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1a8deeb48b0242e0e7c8ef1cf2faca1c2c" kindref="member">control_register::enable_counter</ref>);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>stop()</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>xstd::bitmanip(<ref refid="classembed_1_1cortex__m_1_1systick__timer_1a722def62c9007ebcce7217bdaa2dc3fe" kindref="member">sys_tick</ref>()-&gt;control).reset(<ref refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1a8deeb48b0242e0e7c8ef1cf2faca1c2c" kindref="member">control_register::enable_counter</ref>);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/>boost::leaf::result&lt;bool&gt;<sp/>driver_is_running()<sp/>noexcept</highlight><highlight class="keyword"><sp/>override</highlight></codeline>
+<codeline lineno="170"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>xstd::bitmanip(<ref refid="classembed_1_1cortex__m_1_1systick__timer_1a722def62c9007ebcce7217bdaa2dc3fe" kindref="member">sys_tick</ref>()-&gt;control)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.test(<ref refid="structembed_1_1cortex__m_1_1systick__timer_1_1control__register_1a8deeb48b0242e0e7c8ef1cf2faca1c2c" kindref="member">control_register::enable_counter</ref>);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>boost::leaf::result&lt;void&gt;<sp/>driver_clear()<sp/>noexcept</highlight><highlight class="keyword"><sp/>override</highlight></codeline>
+<codeline lineno="176"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>All<sp/>that<sp/>is<sp/>needed<sp/>is<sp/>to<sp/>stop<sp/>the<sp/>timer.<sp/>When<sp/>the<sp/>timer<sp/>is<sp/>started<sp/>again</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>via<sp/>`schedule()`,<sp/>the<sp/>timer<sp/>value<sp/>will<sp/>be<sp/>reloaded/reset.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>stop();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{};</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/>boost::leaf::result&lt;void&gt;<sp/>driver_schedule(</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>std::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)&gt;<sp/>p_callback,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>std::chrono::nanoseconds<sp/>p_delay)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>std::int64_t<sp/>minimum<sp/>=<sp/>0x00000001;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>std::int64_t<sp/>maximum<sp/>=<sp/>0x00FFFFFF;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cycle_count<sp/>=<sp/>BOOST_LEAF_CHECK(m_frequency.cycles_per(p_delay));</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(minimum<sp/>&lt;<sp/>cycle_count<sp/>&amp;&amp;<sp/>cycle_count<sp/>&lt;=<sp/>maximum)<sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>min_duration<sp/>=</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_LEAF_CHECK(m_frequency.duration_from_cycles(minimum));</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>max_duration<sp/>=</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_LEAF_CHECK(m_frequency.duration_from_cycles(maximum));</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boost::leaf::new_error(out_of_bounds{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.invalid<sp/>=<sp/>p_delay,</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.minimum<sp/>=<sp/>min_duration,</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.maximum<sp/>=<sp/>max_duration,</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Stop<sp/>the<sp/>previously<sp/>scheduled<sp/>event</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>stop();</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Save<sp/>the<sp/>p_callback<sp/>to<sp/>the<sp/>static_callable<sp/>object&apos;s<sp/>statically<sp/>allocated</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>callback<sp/>function.<sp/>The<sp/>lifetime<sp/>of<sp/>this<sp/>object<sp/>exists<sp/>for<sp/>the<sp/>duration<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>program,<sp/>so<sp/>there<sp/>will<sp/>never<sp/>be<sp/>a<sp/>dangling<sp/>reference.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>handler<sp/>=<sp/>static_callable&lt;systick_timer,<sp/>0,<sp/>void(void)&gt;(p_callback);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>interrupt<sp/>service<sp/>routine<sp/>for<sp/>SysTick<sp/>and<sp/>use<sp/>this<sp/>callback<sp/>as<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>handler</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_LEAF_CHECK(cortex_m::interrupt(<ref refid="classembed_1_1cortex__m_1_1systick__timer_1a1a4162befef6bd620fb5f100476d6be8" kindref="member">irq</ref>).enable(handler.get_handler()));</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>time<sp/>reload<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classembed_1_1cortex__m_1_1systick__timer_1a722def62c9007ebcce7217bdaa2dc3fe" kindref="member">sys_tick</ref>()-&gt;reload<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">uint32_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(cycle_count);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Starting<sp/>the<sp/>timer<sp/>will<sp/>restart<sp/>the<sp/>count</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>start();</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{};</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/>frequency<sp/>m_frequency<sp/>=<sp/>frequency(1&apos;000&apos;000);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>embed::cortex_m</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/github/workspace/include/libarmcortex/systick_timer.hpp"/>
+  </compounddef>
+</doxygen>
